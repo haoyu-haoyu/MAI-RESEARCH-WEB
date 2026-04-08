@@ -1,0 +1,401 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - region
+    - generic [ref=e3]:
+      - link "Skip to content" [ref=e4] [cursor=pointer]:
+        - /url: "#start-of-content"
+      - banner [ref=e6]:
+        - heading "Navigation Menu" [level=2] [ref=e7]
+        - generic [ref=e8]:
+          - link "Homepage" [ref=e10] [cursor=pointer]:
+            - /url: /
+            - img [ref=e11]
+          - generic [ref=e13]:
+            - navigation "Global" [ref=e16]:
+              - list [ref=e17]:
+                - listitem [ref=e18]:
+                  - button "Platform" [ref=e20] [cursor=pointer]:
+                    - text: Platform
+                    - img [ref=e21]
+                - listitem [ref=e23]:
+                  - button "Solutions" [ref=e25] [cursor=pointer]:
+                    - text: Solutions
+                    - img [ref=e26]
+                - listitem [ref=e28]:
+                  - button "Resources" [ref=e30] [cursor=pointer]:
+                    - text: Resources
+                    - img [ref=e31]
+                - listitem [ref=e33]:
+                  - button "Open Source" [ref=e35] [cursor=pointer]:
+                    - text: Open Source
+                    - img [ref=e36]
+                - listitem [ref=e38]:
+                  - button "Enterprise" [ref=e40] [cursor=pointer]:
+                    - text: Enterprise
+                    - img [ref=e41]
+                - listitem [ref=e43]:
+                  - link "Pricing" [ref=e44] [cursor=pointer]:
+                    - /url: https://github.com/pricing
+                    - generic [ref=e45]: Pricing
+            - generic [ref=e46]:
+              - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+                - img [ref=e51]
+              - link "Sign in" [ref=e54] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fmai-research%2Fmai-research.github.io%2Ftree%2Fmain%2Fimages
+              - link "Sign up" [ref=e55] [cursor=pointer]:
+                - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Ffiles%2Fdisambiguate&source=header-repo&source_repo=mai-research%2Fmai-research.github.io
+              - button "Appearance settings" [ref=e58] [cursor=pointer]:
+                - img
+    - main [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e66]:
+            - img [ref=e67]
+            - link "mai-research" [ref=e70] [cursor=pointer]:
+              - /url: /mai-research
+            - generic [ref=e71]: /
+            - strong [ref=e72]:
+              - link "mai-research.github.io" [ref=e73] [cursor=pointer]:
+                - /url: /mai-research/mai-research.github.io
+            - generic [ref=e74]: Public
+          - generic [ref=e75]:
+            - list:
+              - listitem [ref=e76]:
+                - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                  - /url: /login?return_to=%2Fmai-research%2Fmai-research.github.io
+                  - img [ref=e78]
+                  - text: Notifications
+              - listitem [ref=e80]:
+                - link "Fork 4" [ref=e81] [cursor=pointer]:
+                  - /url: /login?return_to=%2Fmai-research%2Fmai-research.github.io
+                  - img [ref=e82]
+                  - text: Fork
+                  - generic "4" [ref=e84]
+              - listitem [ref=e85]:
+                - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                  - /url: /login?return_to=%2Fmai-research%2Fmai-research.github.io
+                  - img [ref=e88]
+                  - text: Star
+                  - generic "1 user starred this repository" [ref=e90]: "1"
+        - navigation "Repository" [ref=e91]:
+          - list [ref=e92]:
+            - listitem [ref=e93]:
+              - link "Code" [ref=e94] [cursor=pointer]:
+                - /url: /mai-research/mai-research.github.io
+                - img [ref=e95]
+                - generic [ref=e97]: Code
+            - listitem [ref=e98]:
+              - link "Issues" [ref=e99] [cursor=pointer]:
+                - /url: /mai-research/mai-research.github.io/issues
+                - img [ref=e100]
+                - generic [ref=e103]: Issues
+            - listitem [ref=e104]:
+              - link "Pull requests" [ref=e105] [cursor=pointer]:
+                - /url: /mai-research/mai-research.github.io/pulls
+                - img [ref=e106]
+                - generic [ref=e108]: Pull requests
+            - listitem [ref=e109]:
+              - link "Actions" [ref=e110] [cursor=pointer]:
+                - /url: /mai-research/mai-research.github.io/actions
+                - img [ref=e111]
+                - generic [ref=e113]: Actions
+            - listitem [ref=e114]:
+              - link "Projects" [ref=e115] [cursor=pointer]:
+                - /url: /mai-research/mai-research.github.io/projects
+                - img [ref=e116]
+                - generic [ref=e118]: Projects
+            - listitem [ref=e119]:
+              - link "Security and quality" [ref=e120] [cursor=pointer]:
+                - /url: /mai-research/mai-research.github.io/security
+                - img [ref=e121]
+                - generic [ref=e123]: Security and quality
+            - listitem [ref=e124]:
+              - link "Insights" [ref=e125] [cursor=pointer]:
+                - /url: /mai-research/mai-research.github.io/pulse
+                - img [ref=e126]
+                - generic [ref=e128]: Insights
+      - generic [ref=e136]:
+        - generic [ref=e138]:
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - heading "Collapse file tree" [level=2] [ref=e144]:
+                  - button "Collapse file tree" [expanded] [ref=e145] [cursor=pointer]:
+                    - img [ref=e146]
+                - heading "Files" [level=2] [ref=e149]
+              - generic [ref=e150]:
+                - button "main branch" [ref=e152] [cursor=pointer]:
+                  - generic [ref=e153]:
+                    - generic [ref=e155]:
+                      - img [ref=e157]
+                      - generic [ref=e160]: main
+                    - generic:
+                      - img
+                - button "Search this repository (forward slash)" [ref=e162] [cursor=pointer]:
+                  - img [ref=e163]
+            - generic [ref=e166]:
+              - img [ref=e168]
+              - combobox "Go to file" [ref=e170]
+            - navigation "File Tree Navigation" [ref=e176]:
+              - tree "Files" [ref=e178]:
+                - treeitem "docs" [level=1] [ref=e179]:
+                  - generic [ref=e180] [cursor=pointer]:
+                    - img [ref=e182]
+                    - generic [ref=e184]:
+                      - img [ref=e188]
+                      - generic [ref=e190]: docs
+                - treeitem "images" [expanded] [level=1] [ref=e191]:
+                  - generic [ref=e192] [cursor=pointer]:
+                    - img [ref=e194]
+                    - generic [ref=e196]:
+                      - img [ref=e200]
+                      - generic [ref=e202]: images
+                  - group "images" [ref=e203]:
+                    - treeitem ".DS_Store" [level=2] [ref=e204]:
+                      - generic [ref=e209] [cursor=pointer]:
+                        - img [ref=e212]
+                        - generic [ref=e214]: .DS_Store
+                    - treeitem "background-logo.png" [level=2] [ref=e215]:
+                      - generic [ref=e220] [cursor=pointer]:
+                        - img [ref=e223]
+                        - generic [ref=e225]: background-logo.png
+                    - treeitem "csai.png" [level=2] [ref=e226]:
+                      - generic [ref=e231] [cursor=pointer]:
+                        - img [ref=e234]
+                        - generic [ref=e236]: csai.png
+                    - treeitem "deari.png" [level=2] [ref=e237]:
+                      - generic [ref=e242] [cursor=pointer]:
+                        - img [ref=e245]
+                        - generic [ref=e247]: deari.png
+                    - treeitem "haoyu.jpg" [level=2] [ref=e248]:
+                      - generic [ref=e253] [cursor=pointer]:
+                        - img [ref=e256]
+                        - generic [ref=e258]: haoyu.jpg
+                    - treeitem "hugh.png" [level=2] [ref=e259]:
+                      - generic [ref=e264] [cursor=pointer]:
+                        - img [ref=e267]
+                        - generic [ref=e269]: hugh.png
+                    - treeitem "joseph.jpg" [level=2] [ref=e270]:
+                      - generic [ref=e275] [cursor=pointer]:
+                        - img [ref=e278]
+                        - generic [ref=e280]: joseph.jpg
+                    - treeitem "josh.png" [level=2] [ref=e281]:
+                      - generic [ref=e286] [cursor=pointer]:
+                        - img [ref=e289]
+                        - generic [ref=e291]: josh.png
+                    - treeitem "linglong.jpg" [level=2] [ref=e292]:
+                      - generic [ref=e297] [cursor=pointer]:
+                        - img [ref=e300]
+                        - generic [ref=e302]: linglong.jpg
+                    - treeitem "method.png" [level=2] [ref=e303]:
+                      - generic [ref=e308] [cursor=pointer]:
+                        - img [ref=e311]
+                        - generic [ref=e313]: method.png
+                    - treeitem "pypots.png" [level=2] [ref=e314]:
+                      - generic [ref=e319] [cursor=pointer]:
+                        - img [ref=e322]
+                        - generic [ref=e324]: pypots.png
+                    - treeitem "zina.png" [level=2] [ref=e325]:
+                      - generic [ref=e330] [cursor=pointer]:
+                        - img [ref=e333]
+                        - generic [ref=e335]: zina.png
+                - treeitem "people" [level=1] [ref=e336]:
+                  - generic [ref=e337] [cursor=pointer]:
+                    - img [ref=e339]
+                    - generic [ref=e341]:
+                      - img [ref=e345]
+                      - generic [ref=e347]: people
+                - treeitem "talks" [level=1] [ref=e348]:
+                  - generic [ref=e349] [cursor=pointer]:
+                    - img [ref=e351]
+                    - generic [ref=e353]:
+                      - img [ref=e357]
+                      - generic [ref=e359]: talks
+                - treeitem ".DS_Store" [level=1] [ref=e360]:
+                  - generic [ref=e362] [cursor=pointer]:
+                    - img [ref=e365]
+                    - generic [ref=e367]: .DS_Store
+                - treeitem ".gitignore" [level=1] [ref=e368]:
+                  - generic [ref=e370] [cursor=pointer]:
+                    - img [ref=e373]
+                    - generic [ref=e375]: .gitignore
+                - treeitem "docs.html" [level=1] [ref=e376]:
+                  - generic [ref=e378] [cursor=pointer]:
+                    - img [ref=e381]
+                    - generic [ref=e383]: docs.html
+                - treeitem "index.html" [level=1] [ref=e384]:
+                  - generic [ref=e386] [cursor=pointer]:
+                    - img [ref=e389]
+                    - generic [ref=e391]: index.html
+                - treeitem "method.html" [level=1] [ref=e392]:
+                  - generic [ref=e394] [cursor=pointer]:
+                    - img [ref=e397]
+                    - generic [ref=e399]: method.html
+                - treeitem "script.js" [level=1] [ref=e400]:
+                  - generic [ref=e402] [cursor=pointer]:
+                    - img [ref=e405]
+                    - generic [ref=e407]: script.js
+                - treeitem "style.css" [level=1] [ref=e408]:
+                  - generic [ref=e410] [cursor=pointer]:
+                    - img [ref=e413]
+                    - generic [ref=e415]: style.css
+          - slider "Draggable pane splitter" [ref=e417]
+        - generic [ref=e420]:
+          - generic [ref=e424]:
+            - generic [ref=e426]:
+              - navigation "Breadcrumbs" [ref=e427]:
+                - heading "Breadcrumbs" [level=2] [ref=e428]
+                - list [ref=e429]:
+                  - listitem [ref=e430]:
+                    - link "mai-research.github.io" [ref=e431] [cursor=pointer]:
+                      - /url: /mai-research/mai-research.github.io/tree/main
+              - generic [ref=e432]:
+                - text: /
+                - heading "images" [level=1] [ref=e433]
+                - text: /
+              - button "Copy path" [ref=e434] [cursor=pointer]:
+                - img [ref=e435]
+            - generic [ref=e440]:
+              - heading "Directory actions" [level=2] [ref=e441]
+              - heading "More options" [level=2] [ref=e442]
+              - button "More options" [ref=e443] [cursor=pointer]:
+                - img [ref=e444]
+          - generic [ref=e446]:
+            - generic [ref=e448]:
+              - heading "Latest commit" [level=2] [ref=e449]
+              - generic [ref=e452]:
+                - heading "History" [level=2] [ref=e453]
+                - link "History" [ref=e454] [cursor=pointer]:
+                  - /url: /mai-research/mai-research.github.io/commits/main/images
+                  - generic [ref=e455]:
+                    - generic:
+                      - img
+                    - generic [ref=e456]: History
+            - generic [ref=e458]:
+              - heading "Folders and files" [level=2] [ref=e459]
+              - table "Folders and files" [ref=e460]:
+                - rowgroup [ref=e461]:
+                  - row "Name Last commit message Last commit date" [ref=e462]:
+                    - columnheader "Name" [ref=e463]
+                    - columnheader "Last commit message" [ref=e464]:
+                      - generic "Last commit message" [ref=e465]
+                    - columnheader "Last commit date" [ref=e466]:
+                      - generic "Last commit date" [ref=e467]
+                - rowgroup [ref=e468]:
+                  - row "parent directory Parent directory" [ref=e469]:
+                    - cell "parent directory Parent directory" [ref=e470]:
+                      - heading "parent directory" [level=3] [ref=e471]
+                      - link "Parent directory" [ref=e472] [cursor=pointer]:
+                        - /url: /mai-research/mai-research.github.io/tree/main
+                        - generic [ref=e473]:
+                          - img [ref=e474]
+                          - text: ..
+                  - row ".DS_Store, (File)" [ref=e476]:
+                    - cell ".DS_Store, (File)" [ref=e477]:
+                      - generic [ref=e478]:
+                        - img [ref=e479]
+                        - link ".DS_Store, (File)" [ref=e484] [cursor=pointer]:
+                          - /url: /mai-research/mai-research.github.io/blob/main/images/.DS_Store
+                          - text: .DS_Store
+                    - cell [ref=e485]
+                    - cell [ref=e487]
+                  - row "background-logo.png, (File)" [ref=e490]:
+                    - cell "background-logo.png, (File)" [ref=e491]:
+                      - generic [ref=e492]:
+                        - img [ref=e493]
+                        - link "background-logo.png, (File)" [ref=e498] [cursor=pointer]:
+                          - /url: /mai-research/mai-research.github.io/blob/main/images/background-logo.png
+                          - text: background-logo.png
+                    - cell [ref=e499]
+                    - cell [ref=e501]
+                  - row "csai.png, (File)" [ref=e504]:
+                    - cell "csai.png, (File)" [ref=e505]:
+                      - generic [ref=e506]:
+                        - img [ref=e507]
+                        - link "csai.png, (File)" [ref=e512] [cursor=pointer]:
+                          - /url: /mai-research/mai-research.github.io/blob/main/images/csai.png
+                          - text: csai.png
+                    - cell [ref=e513]
+                    - cell [ref=e515]
+                  - row "deari.png, (File)" [ref=e518]:
+                    - cell "deari.png, (File)" [ref=e519]:
+                      - generic [ref=e520]:
+                        - img [ref=e521]
+                        - link "deari.png, (File)" [ref=e526] [cursor=pointer]:
+                          - /url: /mai-research/mai-research.github.io/blob/main/images/deari.png
+                          - text: deari.png
+                    - cell [ref=e527]
+                    - cell [ref=e529]
+                  - row "haoyu.jpg, (File)" [ref=e532]:
+                    - cell "haoyu.jpg, (File)" [ref=e533]:
+                      - generic [ref=e534]:
+                        - img [ref=e535]
+                        - link "haoyu.jpg, (File)" [ref=e540] [cursor=pointer]:
+                          - /url: /mai-research/mai-research.github.io/blob/main/images/haoyu.jpg
+                          - text: haoyu.jpg
+                    - cell [ref=e541]
+                    - cell [ref=e543]
+                  - row "hugh.png, (File)" [ref=e546]:
+                    - cell "hugh.png, (File)" [ref=e547]:
+                      - generic [ref=e548]:
+                        - img [ref=e549]
+                        - link "hugh.png, (File)" [ref=e554] [cursor=pointer]:
+                          - /url: /mai-research/mai-research.github.io/blob/main/images/hugh.png
+                          - text: hugh.png
+                    - cell [ref=e555]
+                    - cell [ref=e557]
+                  - row "joseph.jpg, (File)" [ref=e560]:
+                    - cell "joseph.jpg, (File)" [ref=e561]:
+                      - generic [ref=e562]:
+                        - img [ref=e563]
+                        - link "joseph.jpg, (File)" [ref=e568] [cursor=pointer]:
+                          - /url: /mai-research/mai-research.github.io/blob/main/images/joseph.jpg
+                          - text: joseph.jpg
+                    - cell [ref=e569]
+                    - cell [ref=e571]
+                  - row "josh.png, (File)" [ref=e574]:
+                    - cell "josh.png, (File)" [ref=e575]:
+                      - generic [ref=e576]:
+                        - img [ref=e577]
+                        - link "josh.png, (File)" [ref=e582] [cursor=pointer]:
+                          - /url: /mai-research/mai-research.github.io/blob/main/images/josh.png
+                          - text: josh.png
+                    - cell [ref=e583]
+                    - cell [ref=e585]
+                  - row "linglong.jpg, (File)" [ref=e588]:
+                    - cell "linglong.jpg, (File)" [ref=e589]:
+                      - generic [ref=e590]:
+                        - img [ref=e591]
+                        - link "linglong.jpg, (File)" [ref=e596] [cursor=pointer]:
+                          - /url: /mai-research/mai-research.github.io/blob/main/images/linglong.jpg
+                          - text: linglong.jpg
+                    - cell [ref=e597]
+                    - cell [ref=e599]
+                  - row "method.png, (File)" [ref=e602]:
+                    - cell "method.png, (File)" [ref=e603]:
+                      - generic [ref=e604]:
+                        - img [ref=e605]
+                        - link "method.png, (File)" [ref=e610] [cursor=pointer]:
+                          - /url: /mai-research/mai-research.github.io/blob/main/images/method.png
+                          - text: method.png
+                    - cell [ref=e611]
+                    - cell [ref=e613]
+                  - row "pypots.png, (File)" [ref=e616]:
+                    - cell "pypots.png, (File)" [ref=e617]:
+                      - generic [ref=e618]:
+                        - img [ref=e619]
+                        - link "pypots.png, (File)" [ref=e624] [cursor=pointer]:
+                          - /url: /mai-research/mai-research.github.io/blob/main/images/pypots.png
+                          - text: pypots.png
+                    - cell [ref=e625]
+                    - cell [ref=e627]
+                  - row "zina.png, (File)" [ref=e630]:
+                    - cell "zina.png, (File)" [ref=e631]:
+                      - generic [ref=e632]:
+                        - img [ref=e633]
+                        - link "zina.png, (File)" [ref=e638] [cursor=pointer]:
+                          - /url: /mai-research/mai-research.github.io/blob/main/images/zina.png
+                          - text: zina.png
+                    - cell [ref=e639]
+                    - cell [ref=e641]
+  - alert [ref=e647]

@@ -1,0 +1,564 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - link "Research" [ref=e6] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e8]
+        - generic [ref=e15]: Research
+      - generic [ref=e16]:
+        - link "Research" [ref=e17] [cursor=pointer]:
+          - /url: "#research"
+        - link "Publications" [ref=e18] [cursor=pointer]:
+          - /url: "#publications"
+        - link "Team" [ref=e19] [cursor=pointer]:
+          - /url: "#team"
+        - link "Contact" [ref=e20] [cursor=pointer]:
+          - /url: "#contact"
+        - button "Toggle Theme" [ref=e22] [cursor=pointer]:
+          - img [ref=e24]
+  - generic [ref=e26]:
+    - generic [ref=e31]:
+      - heading "MAI.Research" [level=1] [ref=e33]
+      - paragraph [ref=e34]: Advancing the frontiers of Multimodal Intelligence & Medical Computing.
+    - generic [ref=e35]:
+      - generic [ref=e36]: Scroll to Explore
+      - img [ref=e37]
+  - generic [ref=e39]:
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - generic [ref=e42]: 01 / RESEARCH
+        - heading "Selected Work" [level=2] [ref=e43]
+      - paragraph [ref=e44]: Developing next-generation algorithms for computer vision, foundation models, and trustworthy AI in healthcare.
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - img "METHOD" [ref=e48]
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]:
+              - generic [ref=e52]: Foundation Models
+              - heading "METHOD" [level=3] [ref=e53]
+            - img [ref=e55]
+          - paragraph [ref=e59]: METHOD is a novel LLM based on the transformer architecture specifically designed for healthcare applications. It addresses unique challenges in modeling patient trajectories, featuring a patient-aware attention mechanism and a U-Net inspired architecture with dynamic skip connections.
+      - generic [ref=e60]:
+        - img "PyPOTS" [ref=e62]
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - generic [ref=e66]: Open Source Toolkit
+              - heading "PyPOTS" [level=3] [ref=e67]
+            - img [ref=e69]
+          - paragraph [ref=e73]: We are part of the PyPOTS team. A comprehensive Python toolkit designed for data mining on complex time series with missing values, offering a collection of state-of-the-art neural network models for imputation, classification, and forecasting.
+      - generic [ref=e74]:
+        - img "CSAI" [ref=e76]
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - generic [ref=e80]: Imputation
+              - heading "CSAI" [level=3] [ref=e81]
+            - img [ref=e83]
+          - paragraph [ref=e87]: Conditional Self-Attention Imputation (CSAI) is an innovative Neural Network architecture for handling complex missing data patterns in multivariate healthcare time series, incorporating a domain-informed temporal decay mechanism.
+      - generic [ref=e88]:
+        - img "DEARI" [ref=e90]
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - generic [ref=e94]: Deep Learning
+              - heading "DEARI" [level=3] [ref=e95]
+            - img [ref=e97]
+          - paragraph [ref=e101]: An innovative deep learning model designed to address complex missing data challenges in heterogeneous multivariate time series. It introduces a scalable deep attention recurrent neural network and a Bayesian marginalization strategy.
+  - generic [ref=e103]:
+    - generic [ref=e104]:
+      - generic [ref=e105]: 02 / KNOWLEDGE
+      - heading "Publications" [level=2] [ref=e106]
+    - generic [ref=e108]:
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - generic [ref=e112]: "18"
+          - generic [ref=e113]: "2025"
+        - generic [ref=e114]:
+          - 'heading "METHOD: Medical Evaluation of Time-series Handling with Out-of-distribution Data" [level=3] [ref=e115]'
+          - generic [ref=e116]:
+            - generic [ref=e117]: L. Qian,
+            - generic [ref=e118]: Z. Ibrahim,
+            - generic [ref=e119]: J. Arul Raj,
+            - text: R. J. B. Dobson
+          - generic [ref=e120]:
+            - generic [ref=e121]: Patterns
+            - generic [ref=e122]: "DOI: 10.1016/j.patter.2025.101xxx"
+        - generic [ref=e123]:
+          - button "PDF" [ref=e124] [cursor=pointer]:
+            - img [ref=e125]
+            - text: PDF
+          - link "Link" [ref=e128] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e129]
+            - text: Link
+      - generic [ref=e134]:
+        - generic [ref=e135]:
+          - generic [ref=e136]: "17"
+          - generic [ref=e137]: "2025"
+        - generic [ref=e138]:
+          - 'heading "Trustworthy Generative AI in Clinical Neuroscience: Bridging the Gap" [level=3] [ref=e139]'
+          - generic [ref=e140]:
+            - generic [ref=e141]: Z. J. Jiang,
+            - generic [ref=e142]: Z. Ibrahim,
+            - text: A. Al-Fayed
+          - generic [ref=e143]:
+            - generic [ref=e144]: Nature Medicine (Perspective)
+            - generic [ref=e145]: "DOI: 10.1038/s41591-025-00111"
+        - generic [ref=e146]:
+          - button "PDF" [ref=e147] [cursor=pointer]:
+            - img [ref=e148]
+            - text: PDF
+          - link "Link" [ref=e151] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e152]
+            - text: Link
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - generic [ref=e159]: "16"
+          - generic [ref=e160]: "2025"
+        - generic [ref=e161]:
+          - 'heading "Agentic Hospital Workflows: A Multi-Agent Simulation Approach" [level=3] [ref=e162]'
+          - generic [ref=e163]:
+            - generic [ref=e164]: Z. Ibrahim,
+            - generic [ref=e165]: J. Arul Raj,
+            - text: Z. J. Jiang
+          - generic [ref=e166]:
+            - generic [ref=e167]: AAAI 2025 (Workshop on Health Intelligence)
+            - generic [ref=e168]: "DOI: 10.1609/aaai.2025.00000"
+        - generic [ref=e169]:
+          - button "PDF" [ref=e170] [cursor=pointer]:
+            - img [ref=e171]
+            - text: PDF
+          - link "Link" [ref=e174] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e175]
+            - text: Link
+      - generic [ref=e180]:
+        - generic [ref=e181]:
+          - generic [ref=e182]: "15"
+          - generic [ref=e183]: "2024"
+        - generic [ref=e184]:
+          - 'heading "NeuroSymbolic AI for Electronic Health Records: A Comprehensive Survey" [level=3] [ref=e185]'
+          - generic [ref=e186]:
+            - generic [ref=e187]: J. Arul Raj,
+            - generic [ref=e188]: Z. Ibrahim,
+            - text: L. Qian
+          - generic [ref=e189]:
+            - generic [ref=e190]: Artificial Intelligence in Medicine
+            - generic [ref=e191]: "DOI: 10.1016/j.artmed.2024.102xxx"
+        - generic [ref=e192]:
+          - button "PDF" [ref=e193] [cursor=pointer]:
+            - img [ref=e194]
+            - text: PDF
+          - link "Link" [ref=e197] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e198]
+            - text: Link
+      - generic [ref=e203]:
+        - generic [ref=e204]:
+          - generic [ref=e205]: "14"
+          - generic [ref=e206]: "2024"
+        - generic [ref=e207]:
+          - heading "Personalized Clinical Decision Support with Multi-Agent Reinforcement Learning" [level=3] [ref=e208]
+          - generic [ref=e209]:
+            - generic [ref=e210]: Z. Ibrahim,
+            - generic [ref=e211]: J. Arul Raj,
+            - text: L. Qian
+          - generic [ref=e212]:
+            - generic [ref=e213]: AAMAS 2024
+            - generic [ref=e214]: "DOI: 10.1145/3635678"
+        - generic [ref=e215]:
+          - button "PDF" [ref=e216] [cursor=pointer]:
+            - img [ref=e217]
+            - text: PDF
+          - link "Link" [ref=e220] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e221]
+            - text: Link
+      - generic [ref=e226]:
+        - generic [ref=e227]:
+          - generic [ref=e228]: "13"
+          - generic [ref=e229]: "2024"
+        - generic [ref=e230]:
+          - heading "Benchmarking Time-Series Imputation Models for Clinical Data" [level=3] [ref=e231]
+          - generic [ref=e232]:
+            - generic [ref=e233]: L. Qian,
+            - text: Z. Ibrahim
+          - generic [ref=e234]:
+            - generic [ref=e235]: Scientific Reports
+            - generic [ref=e236]: "DOI: 10.1038/s41598-024-00123"
+        - generic [ref=e237]:
+          - button "PDF" [ref=e238] [cursor=pointer]:
+            - img [ref=e239]
+            - text: PDF
+          - link "Link" [ref=e242] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e243]
+            - text: Link
+      - generic [ref=e248]:
+        - generic [ref=e249]:
+          - generic [ref=e250]: "12"
+          - generic [ref=e251]: "2024"
+        - generic [ref=e252]:
+          - 'heading "What Doctors Want: A Qualitative Analysis of AI Implementation Requirements" [level=3] [ref=e253]'
+          - generic [ref=e254]:
+            - generic [ref=e255]: H. Logan-Ellis,
+            - generic [ref=e256]: Z. Ibrahim,
+            - text: R. Dobson
+          - generic [ref=e257]:
+            - generic [ref=e258]: BMJ Health & Care Informatics
+            - generic [ref=e259]: "DOI: 10.1136/bmjhci-2024-00456"
+        - generic [ref=e260]:
+          - button "PDF" [ref=e261] [cursor=pointer]:
+            - img [ref=e262]
+            - text: PDF
+          - link "Link" [ref=e265] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e266]
+            - text: Link
+      - generic [ref=e271]:
+        - generic [ref=e272]:
+          - generic [ref=e273]: "11"
+          - generic [ref=e274]: "2024"
+        - generic [ref=e275]:
+          - heading "Federated Learning for Privacy-Preserving Medical Imaging" [level=3] [ref=e276]
+          - generic [ref=e277]:
+            - generic [ref=e278]: Z. Ibrahim,
+            - text: et al.
+          - generic [ref=e279]:
+            - generic [ref=e280]: MICCAI 2024
+            - generic [ref=e281]: "DOI: 10.1007/978-3-031-45678"
+        - generic [ref=e282]:
+          - button "PDF" [ref=e283] [cursor=pointer]:
+            - img [ref=e284]
+            - text: PDF
+          - link "Link" [ref=e287] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e288]
+            - text: Link
+      - generic [ref=e293]:
+        - generic [ref=e294]:
+          - generic [ref=e295]: "10"
+          - generic [ref=e296]: "2024"
+        - generic [ref=e297]:
+          - 'heading "Clinical LLM Adapters: Fine-tuning Foundation Models for Rare Diseases" [level=3] [ref=e298]'
+          - generic [ref=e299]:
+            - generic [ref=e300]: L. Qian,
+            - generic [ref=e301]: Z. J. Jiang,
+            - text: Z. Ibrahim
+          - generic [ref=e302]:
+            - generic [ref=e303]: NPJ Digital Medicine
+            - generic [ref=e304]: "DOI: 10.1038/s41746-024-00000"
+        - generic [ref=e305]:
+          - button "PDF" [ref=e306] [cursor=pointer]:
+            - img [ref=e307]
+            - text: PDF
+          - link "Link" [ref=e310] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e311]
+            - text: Link
+      - generic [ref=e316]:
+        - generic [ref=e317]:
+          - generic [ref=e318]: "09"
+          - generic [ref=e319]: "2023"
+        - generic [ref=e320]:
+          - heading "Counterfactual Explanations for Medical Time Series" [level=3] [ref=e321]
+          - generic [ref=e322]:
+            - generic [ref=e323]: L. Qian,
+            - text: Z. Ibrahim
+          - generic [ref=e324]:
+            - generic [ref=e325]: NeurIPS 2023
+            - generic [ref=e326]: "DOI: 10.1109/NeurIPS.2023.00789"
+        - generic [ref=e327]:
+          - button "PDF" [ref=e328] [cursor=pointer]:
+            - img [ref=e329]
+            - text: PDF
+          - link "Link" [ref=e332] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e333]
+            - text: Link
+      - generic [ref=e338]:
+        - generic [ref=e339]:
+          - generic [ref=e340]: "08"
+          - generic [ref=e341]: "2023"
+        - generic [ref=e342]:
+          - 'heading "Addressing Missing Data in Electronic Health Records: A Causality-Inspired Approach" [level=3] [ref=e343]'
+          - generic [ref=e344]:
+            - generic [ref=e345]: J. Arul Raj,
+            - generic [ref=e346]: L. Qian,
+            - text: Z. Ibrahim
+          - generic [ref=e347]:
+            - generic [ref=e348]: IEEE Journal of Biomedical and Health Informatics
+            - generic [ref=e349]: "DOI: 10.1109/JBHI.2023.00987"
+        - generic [ref=e350]:
+          - button "PDF" [ref=e351] [cursor=pointer]:
+            - img [ref=e352]
+            - text: PDF
+          - link "Link" [ref=e355] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e356]
+            - text: Link
+      - generic [ref=e361]:
+        - generic [ref=e362]:
+          - generic [ref=e363]: "07"
+          - generic [ref=e364]: "2023"
+        - generic [ref=e365]:
+          - heading "Multi-modal Knowledge Graph Construction for Biomedical Discovery" [level=3] [ref=e366]
+          - generic [ref=e367]:
+            - generic [ref=e368]: Z. Ibrahim,
+            - generic [ref=e369]: J. Arul Raj,
+            - text: R. Dobson
+          - generic [ref=e370]:
+            - generic [ref=e371]: Bioinformatics
+            - generic [ref=e372]: "DOI: 10.1093/bioinformatics/btad123"
+        - generic [ref=e373]:
+          - button "PDF" [ref=e374] [cursor=pointer]:
+            - img [ref=e375]
+            - text: PDF
+          - link "Link" [ref=e378] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e379]
+            - text: Link
+      - generic [ref=e384]:
+        - generic [ref=e385]:
+          - generic [ref=e386]: "06"
+          - generic [ref=e387]: "2023"
+        - generic [ref=e388]:
+          - heading "Interpretable Multi-Agent Systems for Healthcare Delivery" [level=3] [ref=e389]
+          - generic [ref=e390]:
+            - generic [ref=e391]: Z. Ibrahim,
+            - text: L. Qian
+          - generic [ref=e392]:
+            - generic [ref=e393]: AAMAS 2023
+            - generic [ref=e394]: "DOI: 10.1145/3543210"
+        - generic [ref=e395]:
+          - button "PDF" [ref=e396] [cursor=pointer]:
+            - img [ref=e397]
+            - text: PDF
+          - link "Link" [ref=e400] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e401]
+            - text: Link
+      - generic [ref=e406]:
+        - generic [ref=e407]:
+          - generic [ref=e408]: "05"
+          - generic [ref=e409]: "2023"
+        - generic [ref=e410]:
+          - heading "Graph Neural Networks for fMRI Analysis in Neurodegenerative Diseases" [level=3] [ref=e411]
+          - generic [ref=e412]:
+            - generic [ref=e413]: J. Arul Raj,
+            - text: Z. Ibrahim
+          - generic [ref=e414]:
+            - generic [ref=e415]: Medical Image Analysis
+            - generic [ref=e416]: "DOI: 10.1016/j.media.2023.102xxx"
+        - generic [ref=e417]:
+          - button "PDF" [ref=e418] [cursor=pointer]:
+            - img [ref=e419]
+            - text: PDF
+          - link "Link" [ref=e422] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e423]
+            - text: Link
+      - generic [ref=e428]:
+        - generic [ref=e429]:
+          - generic [ref=e430]: "04"
+          - generic [ref=e431]: "2022"
+        - generic [ref=e432]:
+          - heading "Feature Selection Bias in Electronic Health Records Analysis" [level=3] [ref=e433]
+          - generic [ref=e434]:
+            - generic [ref=e435]: J. Arul Raj,
+            - text: Z. Ibrahim
+          - generic [ref=e436]:
+            - generic [ref=e437]: KDD Health Day
+            - generic [ref=e438]: "DOI: 10.1145/1234567"
+        - generic [ref=e439]:
+          - button "PDF" [ref=e440] [cursor=pointer]:
+            - img [ref=e441]
+            - text: PDF
+          - link "Link" [ref=e444] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e445]
+            - text: Link
+      - generic [ref=e450]:
+        - generic [ref=e451]:
+          - generic [ref=e452]: "03"
+          - generic [ref=e453]: "2022"
+        - generic [ref=e454]:
+          - heading "Temporal Dynamics Modeling for Health Outcome Forecasting" [level=3] [ref=e455]
+          - generic [ref=e456]:
+            - generic [ref=e457]: L. Qian,
+            - text: Z. Ibrahim
+          - generic [ref=e458]:
+            - generic [ref=e459]: Machine Learning for Healthcare (MLHC)
+            - generic [ref=e460]: "DOI: 10.1145/7654321"
+        - generic [ref=e461]:
+          - button "PDF" [ref=e462] [cursor=pointer]:
+            - img [ref=e463]
+            - text: PDF
+          - link "Link" [ref=e466] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e467]
+            - text: Link
+      - generic [ref=e472]:
+        - generic [ref=e473]:
+          - generic [ref=e474]: "02"
+          - generic [ref=e475]: "2022"
+        - generic [ref=e476]:
+          - 'heading "Deep Learning for Multi-Agent Systems in Healthcare: A Review" [level=3] [ref=e477]'
+          - generic [ref=e478]:
+            - generic [ref=e479]: Z. Ibrahim,
+            - text: et al.
+          - generic [ref=e480]:
+            - generic [ref=e481]: AAMAS
+            - generic [ref=e482]: "DOI: 10.1145/3500000"
+        - generic [ref=e483]:
+          - button "PDF" [ref=e484] [cursor=pointer]:
+            - img [ref=e485]
+            - text: PDF
+          - link "Link" [ref=e488] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e489]
+            - text: Link
+      - generic [ref=e494]:
+        - generic [ref=e495]:
+          - generic [ref=e496]: "01"
+          - generic [ref=e497]: "2021"
+        - generic [ref=e498]:
+          - 'heading "Knowledge Representation in Biomedical AI: A Review" [level=3] [ref=e499]'
+          - generic [ref=e500]:
+            - generic [ref=e501]: Z. Ibrahim,
+            - text: R. Dobson
+          - generic [ref=e502]:
+            - generic [ref=e503]: Journal of Biomedical Informatics
+            - generic [ref=e504]: "DOI: 10.1016/j.jbi.2021.00111"
+        - generic [ref=e505]:
+          - button "PDF" [ref=e506] [cursor=pointer]:
+            - img [ref=e507]
+            - text: PDF
+          - link "Link" [ref=e510] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e511]
+            - text: Link
+      - generic [ref=e515]: — END OF LIST —
+  - generic [ref=e516]:
+    - generic [ref=e517]:
+      - generic [ref=e518]: 03 / PEOPLE
+      - heading "The Team" [level=2] [ref=e519]
+    - generic [ref=e521]:
+      - generic [ref=e522]:
+        - img "Dr Zina Ibrahim" [ref=e525]
+        - generic [ref=e527]:
+          - heading "Dr Zina Ibrahim" [level=3] [ref=e528]
+          - paragraph [ref=e529]: Leader
+          - paragraph [ref=e530]: Associate Professor in Artificial Intelligence in Medicine
+        - generic [ref=e531]: Zina's research spans theoretical foundations and applications of knowledge representation, deep learning, and multi-agent systems, specifically in biomedical knowledge discovery, healthcare delivery, and medical decision support.
+        - generic [ref=e532]:
+          - link [ref=e533] [cursor=pointer]:
+            - /url: mailto:zina.ibrahim@kcl.ac.uk
+            - img [ref=e534]
+          - link [ref=e537] [cursor=pointer]:
+            - /url: https://github.com/zibrahim
+            - img [ref=e538]
+          - link [ref=e541] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e542]
+      - generic [ref=e546]:
+        - img "Dr. Linglong Qian" [ref=e549]
+        - generic [ref=e551]:
+          - heading "Dr. Linglong Qian" [level=3] [ref=e552]
+          - paragraph [ref=e553]: Postdoctoral Researcher
+          - paragraph [ref=e554]: Expert in medical LLMs and deep learning
+        - generic [ref=e555]: Linglong's research bridges deep learning, symbolic reasoning, and medical data science, with a focus on the integration of temporal dynamics, multimodal signals, and clinical text. He is developing the foundational frameworks for health outcome forecasting, such as METHOD models, and contributes to open-source tools for time-series imputation and benchmarking.
+        - generic [ref=e556]:
+          - link [ref=e557] [cursor=pointer]:
+            - /url: mailto:#
+            - img [ref=e558]
+          - link [ref=e561] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e562]
+          - link [ref=e565] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e566]
+      - generic [ref=e570]:
+        - img "Dr Hugh Logan-Ellis" [ref=e573]
+        - generic [ref=e575]:
+          - heading "Dr Hugh Logan-Ellis" [level=3] [ref=e576]
+          - paragraph [ref=e577]: PhD Student
+          - paragraph [ref=e578]: Medical Doctor
+        - generic [ref=e579]: A medical doctor working on finding out what doctors want. His unique perspective bridges the gap between clinical requirements and technical implementation in AI systems.
+        - generic [ref=e580]:
+          - link [ref=e581] [cursor=pointer]:
+            - /url: mailto:#
+            - img [ref=e582]
+          - link [ref=e585] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e586]
+          - link [ref=e589] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e590]
+      - generic [ref=e594]:
+        - img "Mr Joseph Arul Raj" [ref=e597]
+        - generic [ref=e599]:
+          - heading "Mr Joseph Arul Raj" [level=3] [ref=e600]
+          - paragraph [ref=e601]: PhD Student
+          - paragraph [ref=e602]: DRIVE-Health CDT
+        - generic [ref=e603]: Joseph is a PhD student at King's College London. His research focuses on developing NeuroSymbolic models for healthcare data, particularly using brain imaging data. With a background in computer science and big data analytics, he specializes in enhancing predictive models for adverse clinical outcomes from hospital records. His past work has involved developing pipelines and frameworks for electronic health records, with a focus on missing data imputation, feature selection bias, and knowledge graph enrichment.
+        - generic [ref=e604]:
+          - link [ref=e605] [cursor=pointer]:
+            - /url: mailto:#
+            - img [ref=e606]
+          - link [ref=e609] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e610]
+          - link [ref=e613] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e614]
+      - generic [ref=e618]:
+        - img "Dr Zhangshu Joshua Jiang" [ref=e621]
+        - generic [ref=e623]:
+          - heading "Dr Zhangshu Joshua Jiang" [level=3] [ref=e624]
+          - paragraph [ref=e625]: PhD Student
+          - paragraph [ref=e626]: Neurosciences Fellow, Cleveland Clinic London
+        - generic [ref=e627]: Joshua combines clinical neuroscience practice with research into trustworthy generative AI for healthcare. He is currently a Neurosciences Fellow at Cleveland Clinic London and a PhD student in Health Data Science at King's College London, where his research focuses on building AI systems that reason more like clinicians and less like black boxes. His current work includes conducting clinical neurology and neuro-rehabilitation at Cleveland Clinic London. He also develops multi-agent generative AI systems for clinical decision support as part of his doctoral research, and explores approaches to make AI reasoning transparent, interpretable, and aligned with real clinical workflows.
+        - generic [ref=e628]:
+          - link [ref=e629] [cursor=pointer]:
+            - /url: mailto:#
+            - img [ref=e630]
+          - link [ref=e633] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e634]
+          - link [ref=e637] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e638]
+  - contentinfo [ref=e642]:
+    - generic:
+      - generic: MAI LAB
+    - generic [ref=e643]:
+      - generic [ref=e644]:
+        - generic [ref=e645]:
+          - heading "Collaborate with us." [level=2] [ref=e646]
+          - link "zina.ibrahim@kcl.ac.uk" [ref=e647] [cursor=pointer]:
+            - /url: mailto:zina.ibrahim@kcl.ac.uk
+        - generic [ref=e648]:
+          - generic [ref=e649]:
+            - heading "LOCATION" [level=4] [ref=e650]
+            - paragraph [ref=e651]: Dept. of Biostatistics & Health Informatics
+            - paragraph [ref=e652]: King's College London
+            - paragraph [ref=e653]: London, United Kingdom
+          - generic [ref=e654]:
+            - heading "SOCIALS" [level=4] [ref=e655]
+            - list [ref=e656]:
+              - listitem [ref=e657]:
+                - link "Twitter / X" [ref=e658] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e659]:
+                - link "GitHub" [ref=e660] [cursor=pointer]:
+                  - /url: https://github.com/mai-research
+              - listitem [ref=e661]:
+                - link "Google Scholar" [ref=e662] [cursor=pointer]:
+                  - /url: "#"
+      - generic [ref=e663]:
+        - paragraph [ref=e664]: © 2025 MAI Research Group. All rights reserved.
+        - paragraph [ref=e665]: Designed for clarity.

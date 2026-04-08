@@ -1,0 +1,375 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "MAI Logo" [ref=e4] [cursor=pointer]:
+        - /url: "#"
+        - img "MAI Logo" [ref=e6]
+      - generic [ref=e10]:
+        - list [ref=e11]:
+          - listitem [ref=e12]:
+            - link "Projects" [ref=e13] [cursor=pointer]:
+              - /url: "#projects"
+          - listitem [ref=e14]:
+            - link "Team" [ref=e15] [cursor=pointer]:
+              - /url: "#team"
+          - listitem [ref=e16]:
+            - link "Publications" [ref=e17] [cursor=pointer]:
+              - /url: "#publications"
+          - listitem [ref=e18]:
+            - link "Contact" [ref=e19] [cursor=pointer]:
+              - /url: "#contact"
+        - text: 
+      - text: 
+  - main [ref=e20]:
+    - generic [ref=e22]:
+      - heading "Advancing Medical Artificial Intelligence" [level=1] [ref=e23]
+      - paragraph [ref=e24]:
+        - text: The MAI (Medical AI) lab specialises in different aspects of methodological development and applications of fundamental AI methodologies in medicine and health. Our research involves various aspects of knowledge representation and reasoning, deep learning, time-series analytics and the development of the next generation LLMs in the context of medicine and health. We are based at the
+        - link "Department of Biostatistics and Health Informatics" [ref=e25] [cursor=pointer]:
+          - /url: https://www.kcl.ac.uk/bhi
+        - text: ","
+        - generic [ref=e26]:
+          - text: King's College London and are part of the large
+          - link "PHI Data Lab" [ref=e27] [cursor=pointer]:
+            - /url: https://phidatalab.org/about-us/
+          - text: .
+          - link "Explore Our Research" [ref=e28] [cursor=pointer]:
+            - /url: "#projects"
+    - generic [ref=e29]:
+      - heading "Projects" [level=2] [ref=e30]
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - img "Method Architecture" [ref=e33]
+          - heading "METHOD" [level=3] [ref=e34]:
+            - link "METHOD" [ref=e35] [cursor=pointer]:
+              - /url: method.html
+          - paragraph [ref=e36]:
+            - link "METHOD" [ref=e37] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2505.17054
+            - text: "is a novel LLM based on the transformer architecture specifically designed for healthcare applications, addressing unique challenges in modeling patient trajectories from electronic health records. Unlike generic transformer models, METHOD introduces several innovations tailored to clinical data: a patient-aware attention mechanism that ensures strict isolation of patient information while enabling efficient batch processing; an adaptive sliding window attention scheme that captures multi-scale temporal dependencies; and a U-Net inspired architecture with dynamic skip connections for effective long sequence processing. The model overcomes current limitations in handling variable-specific information loss, distribution preservation, and temporal resolution challenges. Experimental evaluation on MIMIC-IV databases demonstrates METHOD's robust performance across varying sequence lengths, particularly for high-severity cases, with improved clinical semantic alignment compared to baseline models. METHOD represents a significant advancement in healthcare AI, offering enhanced computational efficiency while preserving clinically relevant temporal structures—a crucial step toward transformer architectures optimized for healthcare applications."
+          - link "Open Project " [ref=e38] [cursor=pointer]:
+            - /url: method.html
+            - text: Open Project
+            - generic [ref=e39]: 
+        - generic [ref=e40]:
+          - img "PyPOTS Architecture" [ref=e41]
+          - heading "PyPOTS" [level=3] [ref=e42]
+          - paragraph [ref=e43]:
+            - text: We are part of the
+            - link "PyPOTS team" [ref=e44] [cursor=pointer]:
+              - /url: https://pypots.com/about/
+            - text: . PyPOTS is a Python toolkit designed for machine learning and data mining on complex time series data with missing values. It offers a collection of state-of-the-art neural network models capable of performing various analytical tasks such as imputation, classification, clustering, forecasting, anomaly detection, and data cleaning on incomplete, irregularly sampled multivariate time series. The toolkit simplifies the process of working with partially observed time series (pOTS) - i.e. time series with missing values, by providing unified APIs, detailed documentation, and practical examples. Our
+            - link "CSAI" [ref=e45] [cursor=pointer]:
+              - /url: https://github.com/LinglongQian/CSAI
+            - text: model is part of the PyPOTS package.
+          - link "View on GitHub " [ref=e46] [cursor=pointer]:
+            - /url: https://github.com/WenjieDu/PyPOTS/
+            - text: View on GitHub
+            - generic [ref=e47]: 
+        - generic [ref=e48]:
+          - img "CSAI" [ref=e49]
+          - heading "CSAI" [level=3] [ref=e50]
+          - paragraph [ref=e51]: The Conditional Self-Attention Imputation (CSAI) is an innovative Neural Network architecture for handling complex missing data patterns in multivariate healthcare time series. CSAI implements an attention-based hidden state initialisation technique capturing both long- and short-range temporal dependencies; a domain-informed temporal decay mechanism adjusting to clinical data recording patterns; and a non-uniform masking strategy modeling non-random missingness by calibrating weights based on temporal and cross-sectional data characteristics. CSAI is available as a stand-alone algorithm on GitHub but is also part of the PyPOTS Python library, which can be installed via pip.
+          - link "View on GitHub " [ref=e52] [cursor=pointer]:
+            - /url: https://github.com/LinglongQian/CSAI
+            - text: View on GitHub
+            - generic [ref=e53]: 
+        - generic [ref=e54]:
+          - img "DEARI" [ref=e55]
+          - heading "DEARI" [level=3] [ref=e56]
+          - paragraph [ref=e57]: "DEARI is an innovative deep learning model designed to address complex missing data challenges in heterogeneous multivariate time series. Building upon BRITS architecture, DEARI introduces three key innovations: a scalable deep attention recurrent neural network, a self-supervised metric learning approach, and a Bayesian marginalization strategy for uncertainty quantification."
+          - link "View on GitHub " [ref=e58] [cursor=pointer]:
+            - /url: https://github.com/LinglongQian/CSAI
+            - text: View on GitHub
+            - generic [ref=e59]: 
+    - generic [ref=e60]:
+      - heading "Our Team" [level=2] [ref=e61]
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - img "Dr Ibrahim" [ref=e64]
+          - heading "Dr Zina Ibrahim" [level=3] [ref=e65]
+          - paragraph [ref=e66]: Leader
+          - paragraph [ref=e67]: Associate Professor in Artificial Intelligence in Medicine.
+          - paragraph [ref=e68]: Zina's research spans theoretical foundations and applications of knowledge representation, deep learning, and multi-agent systems, specifically in biomedical knowledge discovery, healthcare delivery, and medical decision support.
+          - generic [ref=e69]:
+            - link "" [ref=e70] [cursor=pointer]:
+              - /url: mailto:zina.ibrahim@kcl.ac.uk
+              - generic [ref=e71]: 
+            - link "" [ref=e72] [cursor=pointer]:
+              - /url: https://github.com/zibrahim
+              - generic [ref=e73]: 
+            - link "" [ref=e74] [cursor=pointer]:
+              - /url: https://linkedin.com/in/zina-ibrahim-756ab01a
+              - generic [ref=e75]: 
+        - generic [ref=e76]:
+          - img "Dr Qian" [ref=e77]
+          - heading "Dr. Linglong Qian" [level=3] [ref=e78]
+          - paragraph [ref=e79]: Postdoctoral Researcher
+          - paragraph [ref=e80]: Expert in medical LLMs and deep learning.
+          - paragraph [ref=e81]: Linglong's research bridges deep learning, symbolic reasoning, and medical data science, with a focus on the integration of temporal dynamics, multimodal signals, and clinical text. He is developing the foundational frameworks for health outcome forecasting, such as METHOD models, and contributes to open-source tools for time-series imputation and benchmarking.
+          - generic [ref=e82]:
+            - link "" [ref=e83] [cursor=pointer]:
+              - /url: mailto:linglong.qian@kcl.ac.uk
+              - generic [ref=e84]: 
+            - link "" [ref=e85] [cursor=pointer]:
+              - /url: https://github.com/LinglongQian
+              - generic [ref=e86]: 
+            - link "" [ref=e87] [cursor=pointer]:
+              - /url: https://linkedin.com/in/linglongqian
+              - generic [ref=e88]: 
+        - generic [ref=e89]:
+          - img "Dr. Logan Ellis" [ref=e90]
+          - heading "Dr Hugh Logan-Ellis" [level=3] [ref=e91]
+          - paragraph [ref=e92]: Clinical Lecturer, St Thomas’ Hospital Campus
+          - paragraph [ref=e93]: Physician (General Internal Medicine & Endocrinology) and scientist (clinical AI and latent health status measurement).
+          - paragraph [ref=e94]: Hugh’s research focuses on the "pragmatic extraction" of health measures from electronic health records (EHRs), addressing critical gaps in clinical decision support. Hugh's research coined the "early warning paradox," exploring how retrospective AI validation can undervalue life-saving tools, and the "polar bear problem," where models learn to mirror clinical suspicion rather than pure physiology. Hugh’s current work aims to move AI from "predicting fate" to "measuring state" by developing "digital twins"— physiological simulators that leverage foundation models and clinical embeddings to provide transparent, real-time insights into a patient’s underlying physiological reserve.
+          - generic [ref=e95]:
+            - link "" [ref=e96] [cursor=pointer]:
+              - /url: mailto:hugh.logan_ellis@kcl.ac.uk
+              - generic [ref=e97]: 
+            - link "" [ref=e98] [cursor=pointer]:
+              - /url: https://github.com/HughLoganEllis
+              - generic [ref=e99]: 
+            - link "" [ref=e100] [cursor=pointer]:
+              - /url: https://linkedin.com/in/hugh-logan-ellis
+              - generic [ref=e101]: 
+        - generic [ref=e102]:
+          - img "Joseph Raj" [ref=e103]
+          - heading "Mr Joseph Arul Raj" [level=3] [ref=e104]
+          - paragraph [ref=e105]: PhD Student (DRIVE-Health CDT)
+          - paragraph [ref=e106]: NeuroSymbolic and Multimodal AI for Healthcare
+          - paragraph [ref=e107]: Joseph is a PhD student at King's College London. His research focuses on developing NeuroSymbolic models for healthcare data, particularly using brain imaging data. With a background in computer science and big data analytics, he specializes in enhancing predictive models for adverse clinical outcomes from hospital records. His past work has involved developing pipelines and frameworks for electronic health records, with a focus on missing data imputation, feature selection bias, and knowledge graph enrichment.
+          - generic [ref=e108]:
+            - link "" [ref=e109] [cursor=pointer]:
+              - /url: mailto:joseph_arul_raj@kcl.ac.uk
+              - generic [ref=e110]: 
+            - link "" [ref=e111] [cursor=pointer]:
+              - /url: https://github.com/joseph-arulraj
+              - generic [ref=e112]: 
+            - link "" [ref=e113] [cursor=pointer]:
+              - /url: https://linkedin.com/in/joseph-arul-raj-aa6915164
+              - generic [ref=e114]: 
+        - generic [ref=e115]:
+          - img "Joshua" [ref=e116]
+          - heading "Dr Zhangshu Joshua Jiang" [level=3] [ref=e117]
+          - paragraph [ref=e118]: PhD Student (DRIVE-Health CDT)
+          - paragraph [ref=e119]: Neurosciences Fellow, Cleveland Clinic London
+          - paragraph [ref=e120]: Joshua combines clinical neuroscience practice with research into trustworthy generative AI for healthcare. He is currently a Neurosciences Fellow at Cleveland Clinic London and a PhD student in Health Data Science at King’s College London, where his research focuses on building AI systems that reason more like clinicians and less like black boxes. His current work includes conducting clinical neurology and neuro-rehabilitation at Cleveland Clinic London. He also develops multi-agent generative AI systems for clinical decision support as part of his doctoral research, and explores approaches to make AI reasoning transparent, interpretable, and aligned with real clinical workflows.
+          - generic [ref=e121]:
+            - link "" [ref=e122] [cursor=pointer]:
+              - /url: mailto:zhangshu.j.jiang@kcl.ac.uk
+              - generic [ref=e123]: 
+            - link "" [ref=e124] [cursor=pointer]:
+              - /url: https://github.com/z0shua
+              - generic [ref=e125]: 
+            - link "" [ref=e126] [cursor=pointer]:
+              - /url: https://linkedin.com/in/zhangshu-jiang
+              - generic [ref=e127]: 
+        - generic [ref=e128]:
+          - img "Haoyu Wang" [ref=e129]
+          - heading "Mr Haoyu Wang" [level=3] [ref=e130]
+          - paragraph [ref=e131]: Researcher
+          - paragraph [ref=e132]: Haoyu's research focuses on reproducible benchmarks for multimodal clinical data analysis, particularly the time-aligned fusion of ICU time-series and clinical notes. He is currently developing TIMELY-Bench, a benchmark framework for evaluating fusion strategies across vital signs, lab results, medications, and clinical text in MIMIC-III/IV datasets. With a background in computer science and experience in deep learning for time-series forecasting, his broader interests include multimodal learning for healthcare and applying large language models to unstructured clinical reports.
+          - generic [ref=e133]:
+            - link "" [ref=e134] [cursor=pointer]:
+              - /url: mailto:haoyu.7.wang@kcl.ac.uk
+              - generic [ref=e135]: 
+            - link "" [ref=e136] [cursor=pointer]:
+              - /url: https://github.com/haoyu-haoyu
+              - generic [ref=e137]: 
+            - link "" [ref=e138] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/haoyu-wang-abb052236/
+              - generic [ref=e139]: 
+    - generic [ref=e140]:
+      - heading "Publications" [level=2] [ref=e141]
+      - paragraph [ref=e142]: Explore our contributions to the field of medical artificial intelligence.
+      - list [ref=e143]:
+        - listitem [ref=e144]:
+          - generic [ref=e145]: "CSAI: Conditional Self-Attention Imputation for Healthcare Time-series"
+          - generic [ref=e146]: Qian, L., Raj, J. A., Ellis, H. L., Zhang, A., Zhang, Y., Wang, T., Dobson, R. J., & Ibrahim, Z.
+          - generic [ref=e147]: IEEE JBHI
+          - link "PDF" [ref=e148] [cursor=pointer]:
+            - /url: docs/csai.pdf
+          - link "Publisher link" [ref=e149] [cursor=pointer]:
+            - /url: https://ieeexplore.ieee.org/abstract/document/11314658
+        - listitem [ref=e150]:
+          - generic [ref=e151]: The early warning paradox
+          - generic [ref=e152]: Logan Ellis, H., Palmer, E., Teo, J.T. et al.
+          - generic [ref=e153]: npj Digital Medicine 8, 81 (2025)
+          - link "Publisher link" [ref=e154] [cursor=pointer]:
+            - /url: https://doi.org/10.1038/s41746-024-01408-x
+        - listitem [ref=e155]:
+          - link "Fine-tuning – a Transfer Learning approach Raj, J. A., Qian, L., & Ibrahim, Z. 2024" [ref=e156] [cursor=pointer]:
+            - /url: https://arxiv.org/abs/2411.03941
+            - generic [ref=e157]: Fine-tuning – a Transfer Learning approach
+            - generic [ref=e158]: Raj, J. A., Qian, L., & Ibrahim, Z.
+            - generic [ref=e159]: "2024"
+        - listitem [ref=e160]:
+          - link "How Deep is your Guess? A Fresh Perspective on Deep Learning for Medical Time-Series Imputation Qian, L., Wang, T., Wang, J., Ellis, H. L., Mitra, R., Dobson, R., & Ibrahim, Z. 2025" [ref=e161] [cursor=pointer]:
+            - /url: https://ieeexplore.ieee.org/document/10994403
+            - generic [ref=e162]: How Deep is your Guess? A Fresh Perspective on Deep Learning for Medical Time-Series Imputation
+            - generic [ref=e163]: Qian, L., Wang, T., Wang, J., Ellis, H. L., Mitra, R., Dobson, R., & Ibrahim, Z.
+            - generic [ref=e164]: "2025"
+        - listitem [ref=e165]:
+          - 'link "Deep Learning for Multivariate Time Series Imputation: A Survey Wang, J., Du, W., Yang, Y., Qian, L., Cao, W., Zhang, K., Wang, W., Liang, Y. and Wen, Q. 2024" [ref=e166] [cursor=pointer]':
+            - /url: https://arxiv.org/abs/2402.04059
+            - generic [ref=e167]: "Deep Learning for Multivariate Time Series Imputation: A Survey"
+            - generic [ref=e168]: Wang, J., Du, W., Yang, Y., Qian, L., Cao, W., Zhang, K., Wang, W., Liang, Y. and Wen, Q.
+            - generic [ref=e169]: "2024"
+        - listitem [ref=e170]:
+          - 'link "TSI-Bench: Benchmarking Time Series Imputation Du, W., Wang, J., Qian, L., Yang, Y., Ibrahim, Z., Liu, F., Wang, Z., Liu, H., Zhao, Z., Zhou, Y., Wang, W., Ding, K., Liang, Y., Prakash, B. A., & Wen, Q. 2024" [ref=e171] [cursor=pointer]':
+            - /url: https://arxiv.org/abs/2406.12747
+            - generic [ref=e172]: "TSI-Bench: Benchmarking Time Series Imputation"
+            - generic [ref=e173]: Du, W., Wang, J., Qian, L., Yang, Y., Ibrahim, Z., Liu, F., Wang, Z., Liu, H., Zhao, Z., Zhou, Y., Wang, W., Ding, K., Liang, Y., Prakash, B. A., & Wen, Q.
+            - generic [ref=e174]: "2024"
+        - listitem [ref=e175]:
+          - 'link "Beyond Random Missingness: Clinically Rethinking for Healthcare Time Series Imputation Qian, L., Yang, Y., Du, W., Wang, J., Dobsoni, R., & Ibrahim, Z. 2025" [ref=e176] [cursor=pointer]':
+            - /url: https://arxiv.org/abs/2405.17508
+            - generic [ref=e177]: "Beyond Random Missingness: Clinically Rethinking for Healthcare Time Series Imputation"
+            - generic [ref=e178]: Qian, L., Yang, Y., Du, W., Wang, J., Dobsoni, R., & Ibrahim, Z.
+            - generic [ref=e179]: "2025"
+        - listitem [ref=e180]:
+          - link "Uncertainty-Aware Deep Attention Recurrent Neural Network for Heterogeneous Time Series Imputation Qian, L., Ibrahim, Z., & Dobson, R. 2024" [ref=e181] [cursor=pointer]:
+            - /url: https://arxiv.org/abs/2401.02258
+            - generic [ref=e182]: Uncertainty-Aware Deep Attention Recurrent Neural Network for Heterogeneous Time Series Imputation
+            - generic [ref=e183]: Qian, L., Ibrahim, Z., & Dobson, R.
+            - generic [ref=e184]: "2024"
+        - listitem [ref=e185]:
+          - link "Exploring Multimodal Large Language Models for Radiology Report Error-checking Wu, J., Kim, Y., Keller, E. C., Chow, J., Levine, A. P., Pontikos, N., Ibrahim, Z., Taylor, P., Williams, M. C., & Wu, H. 2024" [ref=e186] [cursor=pointer]:
+            - /url: https://arxiv.org/abs/2312.13103
+            - generic [ref=e187]: Exploring Multimodal Large Language Models for Radiology Report Error-checking
+            - generic [ref=e188]: Wu, J., Kim, Y., Keller, E. C., Chow, J., Levine, A. P., Pontikos, N., Ibrahim, Z., Taylor, P., Williams, M. C., & Wu, H.
+            - generic [ref=e189]: "2024"
+        - listitem [ref=e190]:
+          - 'link "Moving from development to implementation of digital innovations within the NHS: myHealthE Morris AC, Ibrahim Z, Moghraby OS, et al. DIGITAL HEALTH (2023)" [ref=e191] [cursor=pointer]':
+            - /url: https://doi.org/10.1177/20552076231211551
+            - generic [ref=e192]: "Moving from development to implementation of digital innovations within the NHS: myHealthE"
+            - generic [ref=e193]: Morris AC, Ibrahim Z, Moghraby OS, et al.
+            - generic [ref=e194]: DIGITAL HEALTH (2023)
+        - listitem [ref=e195]:
+          - link "Discharge summary hospital course summarisation of in patient Electronic Health Record text Searle, T., Ibrahim, Z., Teo, J., & Dobson, R. J. B. Journal of Biomedical Informatics, 141, 104358 (2023)" [ref=e196] [cursor=pointer]:
+            - /url: https://doi.org/10.1016/j.jbi.2023.104358
+            - generic [ref=e197]: Discharge summary hospital course summarisation of in patient Electronic Health Record text
+            - generic [ref=e198]: Searle, T., Ibrahim, Z., Teo, J., & Dobson, R. J. B.
+            - generic [ref=e199]: Journal of Biomedical Informatics, 141, 104358 (2023)
+        - listitem [ref=e200]:
+          - 'link "Assessing the feasibility of a web-based outcome measurement system in CAMHS – myHealthE Morris, A.C., Ibrahim, Z., Heslin, M., Moghraby, O.S., et al. Child Adolesc Ment Health, 28: 128–147 (2023)" [ref=e201] [cursor=pointer]':
+            - /url: https://doi.org/10.1111/camh.12571
+            - generic [ref=e202]: Assessing the feasibility of a web-based outcome measurement system in CAMHS – myHealthE
+            - generic [ref=e203]: Morris, A.C., Ibrahim, Z., Heslin, M., Moghraby, O.S., et al.
+            - generic [ref=e204]: "Child Adolesc Ment Health, 28: 128–147 (2023)"
+        - listitem [ref=e205]:
+          - link "Addressing Class Imbalance in Electronic Health Records Data Imputation Qian, L., Ibrahim, Z., Zhang, A., Dobson, R.J.B. 6th Int. Workshop on Knowledge Discovery From Healthcare Data (2023)" [ref=e206] [cursor=pointer]:
+            - /url: https://ceur-ws.org/Vol-3479/paper7.pdf
+            - generic [ref=e207]: Addressing Class Imbalance in Electronic Health Records Data Imputation
+            - generic [ref=e208]: Qian, L., Ibrahim, Z., Zhang, A., Dobson, R.J.B.
+            - generic [ref=e209]: 6th Int. Workshop on Knowledge Discovery From Healthcare Data (2023)
+        - listitem [ref=e210]:
+          - 'link "OPTIMA: Remote recruitment and assessment for ADHD referrals Kostyrka-Allchorne, K., Ballard, C., Byford, S. et al. Pilot Feasibility Stud 8, 1 (2022)" [ref=e211] [cursor=pointer]':
+            - /url: https://doi.org/10.1186/s40814-021-00959-0
+            - generic [ref=e212]: "OPTIMA: Remote recruitment and assessment for ADHD referrals"
+            - generic [ref=e213]: Kostyrka-Allchorne, K., Ballard, C., Byford, S. et al.
+            - generic [ref=e214]: Pilot Feasibility Stud 8, 1 (2022)
+        - listitem [ref=e215]:
+          - link "Summarisation of Electronic Health Records with Clinical Concept Guidance Searle, T., Ibrahim, Z., Teo, J., & Dobson, R. 2022" [ref=e216] [cursor=pointer]:
+            - /url: https://kclpure.kcl.ac.uk/portal/files/188150736/2211.07126v1.pdf
+            - generic [ref=e217]: Summarisation of Electronic Health Records with Clinical Concept Guidance
+            - generic [ref=e218]: Searle, T., Ibrahim, Z., Teo, J., & Dobson, R.
+            - generic [ref=e219]: "2022"
+        - listitem [ref=e220]:
+          - link "Multi-modal Latent-Space Self-alignment for Super-Resolution Cardiac MR Segmentation Deng, Y. et al. STACOM 2022, LNCS vol. 13593" [ref=e221] [cursor=pointer]:
+            - /url: https://doi.org/10.1007/978-3-031-23443-9_3
+            - generic [ref=e222]: Multi-modal Latent-Space Self-alignment for Super-Resolution Cardiac MR Segmentation
+            - generic [ref=e223]: Deng, Y. et al.
+            - generic [ref=e224]: STACOM 2022, LNCS vol. 13593
+        - listitem [ref=e225]:
+          - link "Evaluating physical urban features in several mental illnesses Mahabadi, Z., Mahabadi, M., Velupillai, S., Roberts, A., McGuire, P., Ibrahim, Z., & Patel, R. Frontiers in Digital Health (2022)" [ref=e226] [cursor=pointer]:
+            - /url: https://doi.org/10.3389/fdgth.2022.874237
+            - generic [ref=e227]: Evaluating physical urban features in several mental illnesses
+            - generic [ref=e228]: Mahabadi, Z., Mahabadi, M., Velupillai, S., Roberts, A., McGuire, P., Ibrahim, Z., & Patel, R.
+            - generic [ref=e229]: Frontiers in Digital Health (2022)
+        - listitem [ref=e230]:
+          - 'link "GEOexplorer: a webserver for gene expression analysis and visualisation Hunt, G. P., Grassi, L., Henkin, R., Smeraldi, F., et al. Nucleic Acids Research, 50(W1): W367–W374 (2022)" [ref=e231] [cursor=pointer]':
+            - /url: https://doi.org/10.1093/nar/gkac364
+            - generic [ref=e232]: "GEOexplorer: a webserver for gene expression analysis and visualisation"
+            - generic [ref=e233]: Hunt, G. P., Grassi, L., Henkin, R., Smeraldi, F., et al.
+            - generic [ref=e234]: "Nucleic Acids Research, 50(W1): W367–W374 (2022)"
+        - listitem [ref=e235]:
+          - link "Estimating redundancy in clinical text Searle, T., Ibrahim, Z., Teo, J., & Dobson, R. Journal of Biomedical Informatics, 124, 103938 (2021)" [ref=e236] [cursor=pointer]:
+            - /url: https://doi.org/10.1016/j.jbi.2021.103938
+            - generic [ref=e237]: Estimating redundancy in clinical text
+            - generic [ref=e238]: Searle, T., Ibrahim, Z., Teo, J., & Dobson, R.
+            - generic [ref=e239]: Journal of Biomedical Informatics, 124, 103938 (2021)
+        - listitem [ref=e240]:
+          - 'link "Multi-domain clinical natural language processing with MedCAT: The Medical Concept Annotation Toolkit Kraljevic, Z., Searle, T., Shek, A., Roguski, L., Noor, K., Bean, D., Mascio, A., Zhu, L., Folarin, A. A., Roberts, A., Bendayan, R., Richardson, M. P., Stewart, R., Shah, A. D., Wong, W. K., Ibrahim, Z., Teo, J. T., & Dobson, R. J. B. Artificial Intelligence in Medicine, 117, 102083 (2021)" [ref=e241] [cursor=pointer]':
+            - /url: https://doi.org/10.1016/j.artmed.2021.102083
+            - generic [ref=e242]: "Multi-domain clinical natural language processing with MedCAT: The Medical Concept Annotation Toolkit"
+            - generic [ref=e243]: Kraljevic, Z., Searle, T., Shek, A., Roguski, L., Noor, K., Bean, D., Mascio, A., Zhu, L., Folarin, A. A., Roberts, A., Bendayan, R., Richardson, M. P., Stewart, R., Shah, A. D., Wong, W. K., Ibrahim, Z., Teo, J. T., & Dobson, R. J. B.
+            - generic [ref=e244]: Artificial Intelligence in Medicine, 117, 102083 (2021)
+        - listitem [ref=e245]:
+          - link "A Knowledge Distillation Ensemble Framework for Predicting Short- and Long-Term Hospitalization Outcomes From Electronic Health Records Data Z. M. Ibrahim et al. IEEE Journal of Biomedical and Health Informatics, vol. 26, no. 1, pp. 423-435 (2022)" [ref=e246] [cursor=pointer]:
+            - /url: https://doi.org/10.1109/JBHI.2021.3089287
+            - generic [ref=e247]: A Knowledge Distillation Ensemble Framework for Predicting Short- and Long-Term Hospitalization Outcomes From Electronic Health Records Data
+            - generic [ref=e248]: Z. M. Ibrahim et al.
+            - generic [ref=e249]: IEEE Journal of Biomedical and Health Informatics, vol. 26, no. 1, pp. 423-435 (2022)
+        - listitem [ref=e250]:
+          - 'link "Ensemble learning for poor prognosis predictions: A case study on SARS-CoV-2 Honghan Wu, Huayu Zhang, Andreas Karwath, Zina Ibrahim, Ting Shi, Xin Zhang, Kun Wang, Jiaxing Sun, Kevin Dhaliwal, Daniel Bean, Victor Roth Cardoso, Kezhi Li, James T Teo, Amitava Banerjee, Fang Gao-Smith, Tony Whitehouse, Tonny Veenith, Georgios V Gkoutos, Xiaodong Wu, Richard Dobson, Bruce Guthrie Journal of the American Medical Informatics Association, Volume 28, Issue 4, Pages 791–800 (2021)" [ref=e251] [cursor=pointer]':
+            - /url: https://doi.org/10.1093/jamia/ocaa295
+            - generic [ref=e252]: "Ensemble learning for poor prognosis predictions: A case study on SARS-CoV-2"
+            - generic [ref=e253]: Honghan Wu, Huayu Zhang, Andreas Karwath, Zina Ibrahim, Ting Shi, Xin Zhang, Kun Wang, Jiaxing Sun, Kevin Dhaliwal, Daniel Bean, Victor Roth Cardoso, Kezhi Li, James T Teo, Amitava Banerjee, Fang Gao-Smith, Tony Whitehouse, Tonny Veenith, Georgios V Gkoutos, Xiaodong Wu, Richard Dobson, Bruce Guthrie
+            - generic [ref=e254]: Journal of the American Medical Informatics Association, Volume 28, Issue 4, Pages 791–800 (2021)
+        - listitem [ref=e255]:
+          - 'link "The side effect profile of Clozapine in real world data of three large mental health hospitals Iqbal E, Govind R, Romero A, Dzahini O, Broadbent M, et al. PLOS ONE 15(12): e0243437 (2020)" [ref=e256] [cursor=pointer]':
+            - /url: https://doi.org/10.1371/journal.pone.0243437
+            - generic [ref=e257]: The side effect profile of Clozapine in real world data of three large mental health hospitals
+            - generic [ref=e258]: Iqbal E, Govind R, Romero A, Dzahini O, Broadbent M, et al.
+            - generic [ref=e259]: "PLOS ONE 15(12): e0243437 (2020)"
+        - listitem [ref=e260]:
+          - link "An epigenome-wide association study of Alzheimer's disease blood highlights robust DNA hypermethylation in the HOXB6 gene Roubroeks, J. A. Y., Smith, A. R., Smith, R. G., Pishva, E., Ibrahim, Z., et al. Neurobiology of Aging, 95, 26–45 (2020)" [ref=e261] [cursor=pointer]:
+            - /url: https://doi.org/10.1016/j.neurobiolaging.2020.06.023
+            - generic [ref=e262]: An epigenome-wide association study of Alzheimer's disease blood highlights robust DNA hypermethylation in the HOXB6 gene
+            - generic [ref=e263]: Roubroeks, J. A. Y., Smith, A. R., Smith, R. G., Pishva, E., Ibrahim, Z., et al.
+            - generic [ref=e264]: Neurobiology of Aging, 95, 26–45 (2020)
+        - listitem [ref=e265]:
+          - link "Added value of biomarkers and polygenic risk scores as risk factors for coronary artery disease Sharapova, N., Maxwell, J. M., Glanville, K., Hagenaars, S. P., Russell, R., Ibrahim, Z. M., & Lewis, C. M. GENETIC EPIDEMIOLOGY, Vol. 44, No. 5, pp. 516-516 (2020)" [ref=e266] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e267]: Added value of biomarkers and polygenic risk scores as risk factors for coronary artery disease
+            - generic [ref=e268]: Sharapova, N., Maxwell, J. M., Glanville, K., Hagenaars, S. P., Russell, R., Ibrahim, Z. M., & Lewis, C. M.
+            - generic [ref=e269]: GENETIC EPIDEMIOLOGY, Vol. 44, No. 5, pp. 516-516 (2020)
+        - listitem [ref=e270]:
+          - link "Experimental Evaluation and Development of a Silver-Standard for the MIMIC-III Clinical Coding Dataset Searle, T., Ibrahim, Z., & Dobson, R. Proceedings of the 19th SIGBioMed Workshop on Biomedical Language Processing (2020)" [ref=e271] [cursor=pointer]:
+            - /url: https://doi.org/10.18653/v1/2020.bionlp-1.8
+            - generic [ref=e272]: Experimental Evaluation and Development of a Silver-Standard for the MIMIC-III Clinical Coding Dataset
+            - generic [ref=e273]: Searle, T., Ibrahim, Z., & Dobson, R.
+            - generic [ref=e274]: Proceedings of the 19th SIGBioMed Workshop on Biomedical Language Processing (2020)
+        - listitem [ref=e275]:
+          - link "Comparing Natural Language Processing Techniques for Alzheimer's Dementia Prediction in Spontaneous Speech Searle, T., Ibrahim, Z., & Dobson, R. (2020)" [ref=e276] [cursor=pointer]:
+            - /url: https://arxiv.org/abs/2006.07358
+            - generic [ref=e277]: Comparing Natural Language Processing Techniques for Alzheimer's Dementia Prediction in Spontaneous Speech
+            - generic [ref=e278]: Searle, T., Ibrahim, Z., & Dobson, R.
+            - generic [ref=e279]: (2020)
+        - listitem [ref=e280]:
+          - 'link "On classifying sepsis heterogeneity in the ICU: insight using machine learning Zina M Ibrahim, Honghan Wu, Ahmed Hamoud, Lukas Stappen, Richard J B Dobson, Andrea Agarossi Journal of the American Medical Informatics Association, Volume 27, Issue 3, Pages 437–443 (2020)" [ref=e281] [cursor=pointer]':
+            - /url: https://doi.org/10.1093/jamia/ocz211
+            - generic [ref=e282]: "On classifying sepsis heterogeneity in the ICU: insight using machine learning"
+            - generic [ref=e283]: Zina M Ibrahim, Honghan Wu, Ahmed Hamoud, Lukas Stappen, Richard J B Dobson, Andrea Agarossi
+            - generic [ref=e284]: Journal of the American Medical Informatics Association, Volume 27, Issue 3, Pages 437–443 (2020)
+        - listitem [ref=e285]:
+          - 'link "Identifying physical health comorbidities in a cohort of individuals with severe mental illness: An application of SemEHR Bendayan, R., Wu, H., Kraljevic, Z., Stewart, R., Searle, T., Chaturvedi, J., Das-Munshi, J., Ibrahim, Z., Mascio, A., Roberts, A., Bean, D., & Dobson, R. (2020)" [ref=e286] [cursor=pointer]':
+            - /url: https://arxiv.org/abs/2002.08901
+            - generic [ref=e287]: "Identifying physical health comorbidities in a cohort of individuals with severe mental illness: An application of SemEHR"
+            - generic [ref=e288]: Bendayan, R., Wu, H., Kraljevic, Z., Stewart, R., Searle, T., Chaturvedi, J., Das-Munshi, J., Ibrahim, Z., Mascio, A., Roberts, A., Bean, D., & Dobson, R.
+            - generic [ref=e289]: (2020)
+    - generic [ref=e290]:
+      - heading "Get In Touch" [level=2] [ref=e291]
+      - paragraph [ref=e292]: Have questions about our research or interested in collaboration? Contact us!
+      - generic [ref=e293]:
+        - paragraph [ref=e294]:
+          - generic [ref=e295]: 
+          - text: Department of Biostatistics and Health Informatics, KCL
+        - paragraph [ref=e296]:
+          - generic [ref=e297]: 
+          - link "zina.ibrahim@kcl.ac.uk" [ref=e298] [cursor=pointer]:
+            - /url: mailto:zina.ibrahim@kcl.ac.uk
+  - contentinfo [ref=e299]:
+    - paragraph [ref=e300]: © 2026 MAI Research Group. All rights reserved.

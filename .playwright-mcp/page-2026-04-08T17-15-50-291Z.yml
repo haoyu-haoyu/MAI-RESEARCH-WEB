@@ -1,0 +1,395 @@
+- generic [ref=e2]:
+  - region
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+            - link "Sign in" [ref=e54] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fmai-research%2Fmai-research.github.io
+            - link "Sign up" [ref=e55] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=mai-research%2Fmai-research.github.io
+            - button "Appearance settings" [disabled] [ref=e58]:
+              - img
+  - main [ref=e62]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e66]:
+          - img [ref=e67]
+          - link "mai-research" [ref=e70] [cursor=pointer]:
+            - /url: /mai-research
+          - generic [ref=e71]: /
+          - strong [ref=e72]:
+            - link "mai-research.github.io" [ref=e73] [cursor=pointer]:
+              - /url: /mai-research/mai-research.github.io
+          - generic [ref=e74]: Public
+        - generic [ref=e75]:
+          - list:
+            - listitem [ref=e76]:
+              - link "You must be signed in to change notification settings" [ref=e77] [cursor=pointer]:
+                - /url: /login?return_to=%2Fmai-research%2Fmai-research.github.io
+                - img [ref=e78]
+                - text: Notifications
+            - listitem [ref=e80]:
+              - link "Fork 4" [ref=e81] [cursor=pointer]:
+                - /url: /login?return_to=%2Fmai-research%2Fmai-research.github.io
+                - img [ref=e82]
+                - text: Fork
+                - generic "4" [ref=e84]
+            - listitem [ref=e85]:
+              - link "You must be signed in to star a repository" [ref=e87] [cursor=pointer]:
+                - /url: /login?return_to=%2Fmai-research%2Fmai-research.github.io
+                - img [ref=e88]
+                - text: Star
+                - generic "1 user starred this repository" [ref=e90]: "1"
+      - navigation "Repository" [ref=e91]:
+        - list [ref=e92]:
+          - listitem [ref=e93]:
+            - link "Code" [ref=e94] [cursor=pointer]:
+              - /url: /mai-research/mai-research.github.io
+              - img [ref=e95]
+              - generic [ref=e97]: Code
+          - listitem [ref=e98]:
+            - link "Issues" [ref=e99] [cursor=pointer]:
+              - /url: /mai-research/mai-research.github.io/issues
+              - img [ref=e100]
+              - generic [ref=e103]: Issues
+          - listitem [ref=e104]:
+            - link "Pull requests" [ref=e105] [cursor=pointer]:
+              - /url: /mai-research/mai-research.github.io/pulls
+              - img [ref=e106]
+              - generic [ref=e108]: Pull requests
+          - listitem [ref=e109]:
+            - link "Actions" [ref=e110] [cursor=pointer]:
+              - /url: /mai-research/mai-research.github.io/actions
+              - img [ref=e111]
+              - generic [ref=e113]: Actions
+          - listitem [ref=e114]:
+            - link "Projects" [ref=e115] [cursor=pointer]:
+              - /url: /mai-research/mai-research.github.io/projects
+              - img [ref=e116]
+              - generic [ref=e118]: Projects
+          - listitem [ref=e119]:
+            - link "Security and quality" [ref=e120] [cursor=pointer]:
+              - /url: /mai-research/mai-research.github.io/security
+              - img [ref=e121]
+              - generic [ref=e123]: Security and quality
+          - listitem [ref=e124]:
+            - link "Insights" [ref=e125] [cursor=pointer]:
+              - /url: /mai-research/mai-research.github.io/pulse
+              - img [ref=e126]
+              - generic [ref=e128]: Insights
+    - generic [ref=e141]:
+      - heading "mai-research/mai-research.github.io" [level=1] [ref=e143]
+      - generic [ref=e144]:
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - button "main branch" [ref=e151] [cursor=pointer]:
+                - generic [ref=e152]:
+                  - generic [ref=e154]:
+                    - img [ref=e156]
+                    - generic [ref=e159]: main
+                  - generic:
+                    - img
+              - generic [ref=e160]:
+                - link "Branches" [ref=e161] [cursor=pointer]:
+                  - /url: /mai-research/mai-research.github.io/branches
+                  - generic [ref=e162]:
+                    - generic:
+                      - img
+                    - generic [ref=e163]: Branches
+                - link "Tags" [ref=e164] [cursor=pointer]:
+                  - /url: /mai-research/mai-research.github.io/tags
+                  - generic [ref=e165]:
+                    - generic:
+                      - img
+                    - generic [ref=e166]: Tags
+            - generic [ref=e167]:
+              - generic [ref=e171]:
+                - img [ref=e173]
+                - combobox "Go to file" [ref=e175]
+              - button "Code" [ref=e176] [cursor=pointer]:
+                - generic [ref=e177]:
+                  - generic:
+                    - img
+                  - generic [ref=e178]: Code
+                  - generic:
+                    - img
+          - generic [ref=e180]:
+            - heading "Folders and files" [level=2] [ref=e181]
+            - table "Folders and files" [ref=e182]:
+              - rowgroup:
+                - row "Name Last commit message Last commit date":
+                  - columnheader "Name"
+                  - columnheader "Last commit message":
+                    - generic "Last commit message"
+                  - columnheader "Last commit date":
+                    - generic "Last commit date"
+              - rowgroup [ref=e183]:
+                - row "Latest commit History 26 Commits" [ref=e184]:
+                  - cell "Latest commit History 26 Commits" [ref=e185]:
+                    - generic [ref=e186]:
+                      - heading "Latest commit" [level=2] [ref=e187]
+                      - generic [ref=e190]:
+                        - heading "History" [level=2] [ref=e191]
+                        - link "26 Commits" [ref=e192] [cursor=pointer]:
+                          - /url: /mai-research/mai-research.github.io/commits/main/
+                          - generic [ref=e193]:
+                            - generic:
+                              - img
+                            - generic [ref=e194]: 26 Commits
+                - row "docs, (Directory)" [ref=e195]:
+                  - cell "docs, (Directory)" [ref=e196]:
+                    - generic [ref=e197]:
+                      - img [ref=e198]
+                      - link "docs, (Directory)" [ref=e203] [cursor=pointer]:
+                        - /url: /mai-research/mai-research.github.io/tree/main/docs
+                        - text: docs
+                  - cell [ref=e204]
+                  - cell [ref=e206]
+                - row "images, (Directory)" [ref=e209]:
+                  - cell "images, (Directory)" [ref=e210]:
+                    - generic [ref=e211]:
+                      - img [ref=e212]
+                      - link "images, (Directory)" [ref=e217] [cursor=pointer]:
+                        - /url: /mai-research/mai-research.github.io/tree/main/images
+                        - text: images
+                  - cell [ref=e218]
+                  - cell [ref=e220]
+                - row "people, (Directory)" [ref=e223]:
+                  - cell "people, (Directory)" [ref=e224]:
+                    - generic [ref=e225]:
+                      - img [ref=e226]
+                      - link "people, (Directory)" [ref=e231] [cursor=pointer]:
+                        - /url: /mai-research/mai-research.github.io/tree/main/people
+                        - text: people
+                  - cell [ref=e232]
+                  - cell [ref=e234]
+                - row "talks, (Directory)" [ref=e237]:
+                  - cell "talks, (Directory)" [ref=e238]:
+                    - generic [ref=e239]:
+                      - img [ref=e240]
+                      - link "talks, (Directory)" [ref=e245] [cursor=pointer]:
+                        - /url: /mai-research/mai-research.github.io/tree/main/talks
+                        - text: talks
+                  - cell [ref=e246]
+                  - cell [ref=e248]
+                - row ".DS_Store, (File)" [ref=e251]:
+                  - cell ".DS_Store, (File)" [ref=e252]:
+                    - generic [ref=e253]:
+                      - img [ref=e254]
+                      - link ".DS_Store, (File)" [ref=e259] [cursor=pointer]:
+                        - /url: /mai-research/mai-research.github.io/blob/main/.DS_Store
+                        - text: .DS_Store
+                  - cell [ref=e260]
+                  - cell [ref=e262]
+                - row ".gitignore, (File)" [ref=e265]:
+                  - cell ".gitignore, (File)" [ref=e266]:
+                    - generic [ref=e267]:
+                      - img [ref=e268]
+                      - link ".gitignore, (File)" [ref=e273] [cursor=pointer]:
+                        - /url: /mai-research/mai-research.github.io/blob/main/.gitignore
+                        - text: .gitignore
+                  - cell [ref=e274]
+                  - cell [ref=e276]
+                - row "docs.html, (File)" [ref=e279]:
+                  - cell "docs.html, (File)" [ref=e280]:
+                    - generic [ref=e281]:
+                      - img [ref=e282]
+                      - link "docs.html, (File)" [ref=e287] [cursor=pointer]:
+                        - /url: /mai-research/mai-research.github.io/blob/main/docs.html
+                        - text: docs.html
+                  - cell [ref=e288]
+                  - cell [ref=e290]
+                - row "index.html, (File)" [ref=e293]:
+                  - cell "index.html, (File)" [ref=e294]:
+                    - generic [ref=e295]:
+                      - img [ref=e296]
+                      - link "index.html, (File)" [ref=e301] [cursor=pointer]:
+                        - /url: /mai-research/mai-research.github.io/blob/main/index.html
+                        - text: index.html
+                  - cell [ref=e302]
+                  - cell [ref=e304]
+                - row "method.html, (File)" [ref=e307]:
+                  - cell "method.html, (File)" [ref=e308]:
+                    - generic [ref=e309]:
+                      - img [ref=e310]
+                      - link "method.html, (File)" [ref=e315] [cursor=pointer]:
+                        - /url: /mai-research/mai-research.github.io/blob/main/method.html
+                        - text: method.html
+                  - cell [ref=e316]
+                  - cell [ref=e318]
+                - row "script.js, (File)" [ref=e321]:
+                  - cell "script.js, (File)" [ref=e322]:
+                    - generic [ref=e323]:
+                      - img [ref=e324]
+                      - link "script.js, (File)" [ref=e329] [cursor=pointer]:
+                        - /url: /mai-research/mai-research.github.io/blob/main/script.js
+                        - text: script.js
+                  - cell [ref=e330]
+                  - cell [ref=e332]
+                - row "style.css, (File)" [ref=e335]:
+                  - cell "style.css, (File)" [ref=e336]:
+                    - generic [ref=e337]:
+                      - img [ref=e338]
+                      - link "style.css, (File)" [ref=e343] [cursor=pointer]:
+                        - /url: /mai-research/mai-research.github.io/blob/main/style.css
+                        - text: style.css
+                  - cell [ref=e344]
+                  - cell [ref=e346]
+        - generic [ref=e352]:
+          - generic [ref=e355]:
+            - heading "About" [level=2] [ref=e356]
+            - generic [ref=e357]: No description, website, or topics provided.
+            - link "Activity" [ref=e359] [cursor=pointer]:
+              - /url: /mai-research/mai-research.github.io/activity
+              - img [ref=e360]
+              - text: Activity
+            - heading "Stars" [level=3] [ref=e362]
+            - link "1 star" [ref=e364] [cursor=pointer]:
+              - /url: /mai-research/mai-research.github.io/stargazers
+              - img [ref=e365]
+              - strong [ref=e367]: "1"
+              - text: star
+            - heading "Watchers" [level=3] [ref=e368]
+            - link "2 watching" [ref=e370] [cursor=pointer]:
+              - /url: /mai-research/mai-research.github.io/watchers
+              - img [ref=e371]
+              - strong [ref=e373]: "2"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e374]
+            - link "4 forks" [ref=e376] [cursor=pointer]:
+              - /url: /mai-research/mai-research.github.io/forks
+              - img [ref=e377]
+              - strong [ref=e379]: "4"
+              - text: forks
+            - link "Report repository" [ref=e381] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fmai-research%2Fmai-research.github.io&report=mai-research+%28user%29
+          - generic [ref=e383]:
+            - heading "Releases" [level=2] [ref=e384]:
+              - link "Releases" [ref=e385] [cursor=pointer]:
+                - /url: /mai-research/mai-research.github.io/releases
+            - generic [ref=e386]: No releases published
+          - generic "Loading latest packages" [ref=e389]:
+            - heading "Packages" [level=2] [ref=e390]:
+              - link "Packages" [ref=e391] [cursor=pointer]:
+                - /url: /users/mai-research/packages?repo_name=mai-research.github.io
+          - generic [ref=e402]:
+            - heading "Contributors 5" [level=2] [ref=e403]:
+              - link "Contributors 5" [ref=e404] [cursor=pointer]:
+                - /url: /mai-research/mai-research.github.io/graphs/contributors
+                - text: Contributors
+                - generic "5" [ref=e405]
+            - list [ref=e406]:
+              - listitem [ref=e407]:
+                - link "@zibrahim" [ref=e408] [cursor=pointer]:
+                  - /url: https://github.com/zibrahim
+                  - img "@zibrahim" [ref=e409]
+              - listitem [ref=e410]:
+                - link "@joseph-arulraj" [ref=e411] [cursor=pointer]:
+                  - /url: https://github.com/joseph-arulraj
+                  - img "@joseph-arulraj" [ref=e412]
+              - listitem [ref=e413]:
+                - link "@mai-research" [ref=e414] [cursor=pointer]:
+                  - /url: https://github.com/mai-research
+                  - img "@mai-research" [ref=e415]
+              - listitem [ref=e416]:
+                - link "@LinglongQian" [ref=e417] [cursor=pointer]:
+                  - /url: https://github.com/LinglongQian
+                  - img "@LinglongQian" [ref=e418]
+              - listitem [ref=e419]:
+                - link "@haoyu-haoyu" [ref=e420] [cursor=pointer]:
+                  - /url: https://github.com/haoyu-haoyu
+                  - img "@haoyu-haoyu" [ref=e421]
+          - generic [ref=e423]:
+            - heading "Languages" [level=2] [ref=e424]
+            - list [ref=e430]:
+              - listitem [ref=e431]:
+                - link "HTML 80.6%" [ref=e432] [cursor=pointer]:
+                  - /url: /mai-research/mai-research.github.io/search?l=html
+                  - img [ref=e433]
+                  - generic [ref=e435]: HTML
+                  - generic [ref=e436]: 80.6%
+              - listitem [ref=e437]:
+                - link "CSS 15.3%" [ref=e438] [cursor=pointer]:
+                  - /url: /mai-research/mai-research.github.io/search?l=css
+                  - img [ref=e439]
+                  - generic [ref=e441]: CSS
+                  - generic [ref=e442]: 15.3%
+              - listitem [ref=e443]:
+                - link "JavaScript 4.1%" [ref=e444] [cursor=pointer]:
+                  - /url: /mai-research/mai-research.github.io/search?l=javascript
+                  - img [ref=e445]
+                  - generic [ref=e447]: JavaScript
+                  - generic [ref=e448]: 4.1%
+  - contentinfo [ref=e450]:
+    - heading "Footer" [level=2] [ref=e451]
+    - generic [ref=e452]:
+      - generic [ref=e453]:
+        - link "GitHub Homepage" [ref=e454] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e455]
+        - generic [ref=e457]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e458]:
+        - heading "Footer navigation" [level=3] [ref=e459]
+        - list "Footer navigation" [ref=e460]:
+          - listitem [ref=e461]:
+            - link "Terms" [ref=e462] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e463]:
+            - link "Privacy" [ref=e464] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e465]:
+            - link "Security" [ref=e466] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e467]:
+            - link "Status" [ref=e468] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e469]:
+            - link "Community" [ref=e470] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e471]:
+            - link "Docs" [ref=e472] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e473]:
+            - link "Contact" [ref=e474] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e475]:
+            - button "Manage cookies" [ref=e477] [cursor=pointer]
+          - listitem [ref=e478]:
+            - button "Do not share my personal information" [ref=e480] [cursor=pointer]
