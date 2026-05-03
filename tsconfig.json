@@ -25,5 +25,10 @@
     },
     "allowImportingTsExtensions": true,
     "noEmit": true
-  }
+  },
+  "exclude": [
+    "checkpoints",
+    "dist",
+    "node_modules"
+  ]
 }

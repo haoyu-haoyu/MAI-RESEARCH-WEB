@@ -7,6 +7,7 @@ interface CustomCursorProps {
 
 const CustomCursor: React.FC<CustomCursorProps> = ({ darkMode }) => {
   const [isHovering, setIsHovering] = useState(false);
+  const [preserveColorHover, setPreserveColorHover] = useState(false);
   
   // 1. Raw Mouse Position (Instant Response)
   // This tracks the mouse exactly 1:1 to eliminate perceived latency for the user
@@ -21,24 +22,29 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ darkMode }) => {
   const smoothY = useSpring(mouseY, springConfig);
 
   useEffect(() => {
+    const updateHoverState = (target: Element | null) => {
+      const element = target;
+      const isInteractive = Boolean(
+        element &&
+          (element.tagName === 'A' ||
+            element.tagName === 'BUTTON' ||
+            element.closest('a') ||
+            element.closest('button') ||
+            element.classList.contains('cursor-pointer'))
+      );
+
+      setIsHovering(isInteractive);
+      setPreserveColorHover(Boolean(element?.closest('[data-cursor-preserve]')));
+    };
+
     const moveCursor = (e: MouseEvent) => {
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
+      updateHoverState(document.elementFromPoint(e.clientX, e.clientY));
     };
 
     const handleMouseOver = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      if (
-        target.tagName === 'A' || 
-        target.tagName === 'BUTTON' || 
-        target.closest('a') || 
-        target.closest('button') ||
-        target.classList.contains('cursor-pointer')
-      ) {
-        setIsHovering(true);
-      } else {
-        setIsHovering(false);
-      }
+      updateHoverState(e.target as Element);
     };
 
     window.addEventListener('mousemove', moveCursor);
@@ -55,9 +61,13 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ darkMode }) => {
       {/* 1. The Outer Ring (Smooth Follow) */}
       <motion.div
         className={`fixed top-0 left-0 w-8 h-8 rounded-full pointer-events-none z-[100] border transition-colors duration-300
-          ${darkMode 
-            ? 'border-neon-cyan mix-blend-normal' 
-            : 'border-white mix-blend-difference'
+          ${preserveColorHover
+            ? darkMode
+              ? 'border-neon-cyan'
+              : 'border-lab-accent/70'
+            : darkMode
+            ? 'border-neon-cyan' 
+            : 'border-lab-accent/70'
           }`}
         style={{
           x: smoothX,
@@ -65,11 +75,11 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ darkMode }) => {
           translateX: '-50%',
           translateY: '-50%',
           backgroundColor: isHovering 
-              ? (darkMode ? 'rgba(102, 252, 241, 0.1)' : 'rgba(255, 255, 255, 1)') 
+              ? (preserveColorHover ? 'transparent' : darkMode ? 'rgba(125, 221, 232, 0.10)' : 'rgba(31, 56, 100, 0.06)') 
               : 'transparent',
         }}
         animate={{
-          scale: isHovering ? 1.5 : 1,
+          scale: isHovering && !preserveColorHover ? 1.5 : 1,
         }}
         transition={{ duration: 0.2 }}
       />
@@ -77,9 +87,8 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ darkMode }) => {
       {/* 2. The Inner Dot (Instant) */}
       <motion.div 
          className={`fixed top-0 left-0 w-1.5 h-1.5 rounded-full pointer-events-none z-[101] transition-opacity duration-200
-            ${darkMode ? 'bg-neon-cyan' : 'bg-white'} 
-            ${isHovering ? 'opacity-0' : 'opacity-100'}
-            ${!darkMode ? 'mix-blend-difference' : ''} 
+            ${darkMode ? 'bg-neon-cyan' : 'bg-lab-accent'} 
+            ${isHovering && !preserveColorHover ? 'opacity-0' : 'opacity-100'}
          `}
          style={{
             x: mouseX,

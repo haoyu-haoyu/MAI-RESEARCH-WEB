@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import MaiLogo from './MaiLogo';
 
 interface NavbarProps {
   darkMode: boolean;
@@ -15,6 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleTheme }) => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -28,50 +30,70 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleTheme }) => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-40 transition-all duration-500 border-b ${
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b ${
         isScrolled
-          ? 'bg-lab-white/80 dark:bg-void-black/80 backdrop-blur-md border-lab-gray dark:border-void-gray py-4'
+          ? 'bg-lab-white/95 dark:bg-void-black/95 backdrop-blur-xl border-lab-gray dark:border-void-gray py-4'
           : 'bg-transparent border-transparent py-6'
       }`}
     >
-      <div className="container mx-auto px-6 flex justify-between items-center">
+      <style>
+        {`
+          @media (min-width: 1200px) and (min-aspect-ratio: 21 / 10) {
+            .mai-nav-inner {
+              max-width: 3120px;
+              padding-left: 96px;
+              padding-right: 96px;
+            }
+
+            .mai-nav-logo {
+              width: 96px;
+              height: 48px;
+            }
+
+            .mai-nav-wordmark {
+              font-size: 12px;
+              letter-spacing: 0.22em;
+            }
+
+            .mai-nav-links {
+              gap: 40px;
+            }
+
+            .mai-nav-links a {
+              font-size: 14px;
+            }
+          }
+        `}
+      </style>
+
+      <div className="container mai-nav-inner mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-4 group">
-          <div className="relative w-16 h-8">
-            <svg 
-              viewBox="0 0 80 40" 
-              className="w-full h-full fill-lab-accent dark:fill-neon-cyan transition-colors duration-500"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              {/* M - Geometric Block */}
-              <path d="M0 40 V0 L15 20 L30 0 V40 H22 V15 L15 25 L8 15 V40 H0Z" />
-              
-              {/* A - Solid Triangle */}
-              <path d="M35 40 L45 10 L55 40 H35Z" />
-              
-              {/* i - Stick and Dot */}
-              <rect x="62" y="18" width="6" height="22" />
-              <circle cx="65" cy="8" r="4" />
-            </svg>
-            
-            {/* Glow Effect */}
+        <a href="#" className="flex items-center gap-4 group" data-cursor-preserve>
+          <div className="mai-nav-logo relative w-16 h-8 text-lab-accent dark:text-neon-cyan">
+            <MaiLogo
+              variant="nav"
+              className="w-full h-full transition-colors duration-500"
+              title="MAI Research"
+              mColor="currentColor"
+              letterColor="currentColor"
+            />
             <div className="absolute inset-0 bg-lab-accent dark:bg-neon-cyan blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
           </div>
           
           <div className="h-8 w-px bg-lab-text/10 dark:bg-void-text/10"></div>
           
-          <span className="font-mono text-xs font-bold tracking-[0.2em] text-lab-text/80 dark:text-void-text/80 uppercase pt-0.5">
+          <span className="mai-nav-wordmark font-mono text-xs font-bold tracking-[0.2em] text-lab-text/80 dark:text-void-text/80 uppercase pt-0.5">
             Research
           </span>
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="mai-nav-links hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="relative text-sm font-medium text-lab-text dark:text-void-text hover:text-lab-accent dark:hover:text-neon-cyan transition-colors"
+              className="relative text-sm font-medium text-lab-text dark:text-[#dbe7f4] hover:text-lab-accent dark:hover:text-[#b8d7f0] transition-colors"
             >
               {link.name}
             </a>
@@ -85,7 +107,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleTheme }) => {
             aria-label="Toggle Theme"
           >
             <div className="relative z-10">
-                {darkMode ? <Sun size={20} className="text-neon-cyan" /> : <Moon size={20} className="text-lab-accent" />}
+                {darkMode ? <Sun size={20} className="text-[#b8d7f0]" /> : <Moon size={20} className="text-lab-accent" />}
             </div>
           </button>
         </div>

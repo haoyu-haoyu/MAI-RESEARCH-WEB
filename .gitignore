@@ -12,6 +12,32 @@ dist
 dist-ssr
 *.local
 
+# Local browser / QA artifacts
+.playwright-cli/
+.playwright-mcp/
+/qa-*.png
+/hero-*.png
+/method-*.png
+/team-*.png
+/project-*.png
+/ultrawide-*.png
+/updated-*.png
+/publication-scrollbar-*.png
+/logo-hover-*.png
+/nav-*.png
+/research-*.png
+/bento-description-*.png
+/default-*.png
+/mobile-*.png
+/paper-*.png
+/paper-*.pdf
+/paper-text.txt
+/restored-checkpoint.png
+/checkpoints/
+/m_check*.html
+/*snapshot.md
+/qa-*.md
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
