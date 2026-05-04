@@ -203,10 +203,25 @@ const App: React.FC = () => {
                 
                 <div className="grid grid-cols-2 gap-8 text-sm font-mono">
                     <div>
-                        <p className="opacity-50 mb-4">LOCATION</p>
-                        <p>Dept. of Biostatistics & Health Informatics</p>
-                        <p>King's College London</p>
-                        <p>London, United Kingdom</p>
+                        <p className="opacity-50 mb-4">AFFILIATION</p>
+                        <ul className="space-y-2">
+                            <li>
+                                <a href="https://www.kcl.ac.uk/bhi" target="_blank" rel="noreferrer" className="hover:text-neon-cyan transition-colors">
+                                    Dept. of Biostatistics & Health Informatics
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kcl.ac.uk/" target="_blank" rel="noreferrer" className="hover:text-neon-cyan transition-colors">
+                                    King's College London
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://phidatalab.org/about-us/" target="_blank" rel="noreferrer" className="hover:text-neon-cyan transition-colors">
+                                    PHI Data Lab
+                                </a>
+                            </li>
+                            <li className="opacity-70">London, United Kingdom</li>
+                        </ul>
                     </div>
                     <div>
                         <p className="opacity-50 mb-4">SOCIALS</p>
