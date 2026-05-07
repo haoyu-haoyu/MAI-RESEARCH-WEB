@@ -6,7 +6,7 @@ export const PROJECTS: Project[] = [
     title: 'METHOD',
     category: 'Foundation Models',
     description: 'METHOD is a novel LLM based on the transformer architecture specifically designed for healthcare applications. It addresses unique challenges in modeling patient trajectories, featuring a patient-aware attention mechanism and a U-Net inspired architecture with dynamic skip connections.',
-    image: '/images/method.png',
+    image: 'images/method.png',
     link: '#/method',
     size: 'large',
     year: '2024'
@@ -16,7 +16,7 @@ export const PROJECTS: Project[] = [
     title: 'PyPOTS',
     category: 'Open Source Toolkit',
     description: 'We are part of the PyPOTS team. A comprehensive Python toolkit designed for data mining on complex time series with missing values, offering a collection of state-of-the-art neural network models for imputation, classification, and forecasting.',
-    image: '/images/pypots.png',
+    image: 'images/pypots.png',
     link: '#/projects/pypots',
     size: 'medium',
     year: '2024'
@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
     title: 'CSAI',
     category: 'Imputation',
     description: 'Conditional Self-Attention Imputation (CSAI) is an innovative Neural Network architecture for handling complex missing data patterns in multivariate healthcare time series, incorporating a domain-informed temporal decay mechanism.',
-    image: '/images/csai.png',
+    image: 'images/csai.png',
     link: '#/projects/csai',
     size: 'small',
     year: '2025'
@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
     title: 'DEARI',
     category: 'Deep Learning',
     description: 'An innovative deep learning model designed to address complex missing data challenges in heterogeneous multivariate time series. It introduces a scalable deep attention recurrent neural network and a Bayesian marginalization strategy.',
-    image: '/images/deari.png',
+    image: 'images/deari.png',
     link: '#/projects/deari',
     size: 'small',
     year: '2024'
@@ -49,7 +49,7 @@ export const PROJECT_PAGES: Record<string, ProjectPageData> = {
     title: 'PyPOTS',
     category: 'Open Source Toolkit',
     year: '2024',
-    image: '/images/pypots.png',
+    image: 'images/pypots.png',
     imageAlt: 'PyPOTS open-source toolkit workflow diagram',
     headline: 'A Python ecosystem for partially observed time series.',
     summary: 'PyPOTS brings imputation, classification, forecasting, clustering, and anomaly detection workflows into a unified toolkit for partially observed time series.',
@@ -124,7 +124,7 @@ export const PROJECT_PAGES: Record<string, ProjectPageData> = {
     title: 'CSAI',
     category: 'Imputation',
     year: '2025',
-    image: '/images/csai.png',
+    image: 'images/csai.png',
     imageAlt: 'CSAI architecture diagram',
     headline: 'Conditional self-attention for healthcare time-series imputation.',
     summary: 'CSAI targets complex missingness in multivariate healthcare time series with conditional self-attention and domain-informed temporal decay.',
@@ -198,7 +198,7 @@ export const PROJECT_PAGES: Record<string, ProjectPageData> = {
     title: 'DEARI',
     category: 'Deep Learning',
     year: '2024',
-    image: '/images/deari.png',
+    image: 'images/deari.png',
     imageAlt: 'DEARI model architecture diagram',
     headline: 'Deep attention recurrent imputation for heterogeneous time series.',
     summary: 'DEARI studies imputation for heterogeneous multivariate time series using deep attention recurrent modelling and Bayesian marginalization.',
@@ -533,7 +533,7 @@ export const TEAM: TeamMember[] = [
     name: 'Dr Zina Ibrahim',
     role: 'Leader',
     roleDetail: 'Associate Professor in Artificial Intelligence in Medicine',
-    image: '/images/zina.png',
+    image: 'images/zina.png',
     bio: "Zina's research spans theoretical foundations and applications of knowledge representation, deep learning, and multi-agent systems, specifically in biomedical knowledge discovery, healthcare delivery, and medical decision support.",
     socials: {
       email: 'zina.ibrahim@kcl.ac.uk',
@@ -546,7 +546,7 @@ export const TEAM: TeamMember[] = [
     name: 'Dr. Linglong Qian',
     role: 'Postdoctoral Researcher',
     roleDetail: 'Expert in medical LLMs and deep learning',
-    image: '/images/linglong.jpg',
+    image: 'images/linglong.jpg',
     bio: "Linglong's research bridges deep learning, symbolic reasoning, and medical data science, with a focus on the integration of temporal dynamics, multimodal signals, and clinical text. He is developing the foundational frameworks for health outcome forecasting, such as METHOD models, and contributes to open-source tools for time-series imputation and benchmarking.",
     socials: {
       email: 'linglong.qian@kcl.ac.uk',
@@ -559,7 +559,7 @@ export const TEAM: TeamMember[] = [
     name: 'Dr Hugh Logan-Ellis',
     role: 'Clinical Lecturer, St Thomas\' Hospital Campus',
     roleDetail: 'Physician (General Internal Medicine & Endocrinology) and scientist (clinical AI and latent health status measurement)',
-    image: '/images/hugh.png',
+    image: 'images/hugh.png',
     bio: "Hugh's research focuses on the \"pragmatic extraction\" of health measures from electronic health records (EHRs), addressing critical gaps in clinical decision support. Hugh's research coined the \"early warning paradox,\" exploring how retrospective AI validation can undervalue life-saving tools, and the \"polar bear problem,\" where models learn to mirror clinical suspicion rather than pure physiology. Hugh's current work aims to move AI from \"predicting fate\" to \"measuring state\" by developing \"digital twins\"— physiological simulators that leverage foundation models and clinical embeddings to provide transparent, real-time insights into a patient's underlying physiological reserve.",
     socials: {
       email: 'hugh.logan_ellis@kcl.ac.uk',
@@ -572,7 +572,7 @@ export const TEAM: TeamMember[] = [
     name: 'Mr Joseph Arul Raj',
     role: 'PhD Student (DRIVE-Health CDT)',
     roleDetail: 'NeuroSymbolic and Multimodal AI for Healthcare',
-    image: '/images/joseph.jpg',
+    image: 'images/joseph.jpg',
     bio: "Joseph is a PhD student at King's College London. His research focuses on developing NeuroSymbolic models for healthcare data, particularly using brain imaging data. With a background in computer science and big data analytics, he specializes in enhancing predictive models for adverse clinical outcomes from hospital records. His past work has involved developing pipelines and frameworks for electronic health records, with a focus on missing data imputation, feature selection bias, and knowledge graph enrichment.",
     socials: {
       email: 'joseph_arul_raj@kcl.ac.uk',
@@ -585,7 +585,7 @@ export const TEAM: TeamMember[] = [
     name: 'Dr Zhangshu Joshua Jiang',
     role: 'PhD Student (DRIVE-Health CDT)',
     roleDetail: 'Neurosciences Fellow, Cleveland Clinic London',
-    image: '/images/josh.png',
+    image: 'images/josh.png',
     bio: "Joshua combines clinical neuroscience practice with research into trustworthy generative AI for healthcare. He is currently a Neurosciences Fellow at Cleveland Clinic London and a PhD student in Health Data Science at King's College London, where his research focuses on building AI systems that reason more like clinicians and less like black boxes. His current work includes conducting clinical neurology and neuro-rehabilitation at Cleveland Clinic London. He also develops multi-agent generative AI systems for clinical decision support as part of his doctoral research, and explores approaches to make AI reasoning transparent, interpretable, and aligned with real clinical workflows.",
     socials: {
       email: 'zhangshu.j.jiang@kcl.ac.uk',
@@ -598,7 +598,7 @@ export const TEAM: TeamMember[] = [
     name: 'Mr Haoyu Wang',
     role: 'Researcher',
     roleDetail: 'Multimodal Clinical Data Analysis',
-    image: '/images/haoyu.jpg',
+    image: 'images/haoyu.jpg',
     bio: "Haoyu's research focuses on reproducible benchmarks for multimodal clinical data analysis, particularly the time-aligned fusion of ICU time-series and clinical notes. He is currently developing TIMELY-Bench, a benchmark framework for evaluating fusion strategies across vital signs, lab results, medications, and clinical text in MIMIC-III/IV datasets. With a background in computer science and experience in deep learning for time-series forecasting, his broader interests include multimodal learning for healthcare and applying large language models to unstructured clinical reports.",
     socials: {
       email: 'haoyu.7.wang@kcl.ac.uk',
@@ -611,7 +611,7 @@ export const TEAM: TeamMember[] = [
     name: 'Ms Zitong Li',
     role: 'Researcher',
     roleDetail: 'Trustworthy Clinical AI',
-    image: '/images/zitong-li.png',
+    image: 'images/zitong-li.png',
     imagePosition: '50% 21%',
     bio: "Zitong's research focuses on trustworthy clinical AI, with a particular interest in large language models, sparse electronic health records, and ICU time-series. Her work combines MIMIC-IV clinical trajectories, missing-data imputation, forecasting, and evidence-grounded reasoning evaluation to study whether model outputs are clinically plausible, temporally grounded, and reliable. Her broader interests lie in clinically grounded medical foundation models, temporal reasoning over sparse EHR data, robust missing-data modelling, and the trustworthy evaluation of AI systems for real-world clinical decision support.",
     socials: {
