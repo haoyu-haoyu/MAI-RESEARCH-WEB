@@ -151,7 +151,7 @@ const HeroBackgroundElements: React.FC<Props> = ({ darkMode }) => {
         />
         <polygon points={creamPoints} fill={url('bg-cream')} />
         <image
-          href="/images/turing-1951.jpg"
+          href="images/turing-1951.jpg"
           x={turing.x}
           y={turing.y}
           width={turing.width}
@@ -172,7 +172,7 @@ const HeroBackgroundElements: React.FC<Props> = ({ darkMode }) => {
         <g className="mai-decorations" style={{ mixBlendMode: darkMode ? 'screen' : 'multiply' }}>
           <g transform={graphTransform}>
             <image
-              href="/images/graph-similarity-formula-latex.svg"
+              href="images/graph-similarity-formula-latex.svg"
               x="0"
               y="-73.25"
               width={isUltrawide ? 390 : 380}
@@ -218,7 +218,7 @@ const HeroBackgroundElements: React.FC<Props> = ({ darkMode }) => {
           </g>
 
           <image
-            href="/images/rnn-formula-latex.svg"
+            href="images/rnn-formula-latex.svg"
             x={rnnFormula.x}
             y={rnnFormula.y}
             width={rnnFormula.width}
