@@ -359,7 +359,7 @@ const MethodPage: React.FC = () => {
               </div>
               <div className="flex min-h-[360px] items-center justify-center overflow-hidden p-4 md:min-h-[440px] md:p-6 2xl:min-h-[540px] 2xl:p-8">
                 <img
-                  src="/images/method-architecture.png"
+                  src="images/method-architecture.png"
                   alt="METHOD architecture diagram"
                   className="max-h-[620px] w-full object-contain"
                 />
