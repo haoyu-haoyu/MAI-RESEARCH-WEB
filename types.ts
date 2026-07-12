@@ -77,3 +77,10 @@ export interface NavItem {
   label: string;
   href: string;
 }
+
+export interface SiteContent {
+  projects: Project[];
+  projectPages: Record<string, ProjectPageData>;
+  publications: Publication[];
+  team: TeamMember[];
+}

@@ -19,6 +19,7 @@ import {
   getAttentionReason,
   getAttentionSummary,
 } from './methodDemoLogic.js';
+import { Publication } from '../types';
 
 const overview = [
   {
@@ -72,15 +73,6 @@ const results = [
     value: 'SOFA > 7',
     label: 'High-severity cases',
     text: 'The paper reports the clearest gains on high-severity patient trajectories.',
-  },
-];
-
-const publications = [
-  {
-    title: 'METHOD: Modular Efficient Transformer for Health Outcome Discovery',
-    authors: 'Linglong Qian and Zina Ibrahim',
-    venue: 'arXiv, 2025',
-    href: 'https://arxiv.org/abs/2505.17054',
   },
 ];
 
@@ -152,13 +144,20 @@ type SelectedAttentionPair = {
   keyId: string;
 } | null;
 
-const MethodPage: React.FC = () => {
+interface MethodPageProps {
+  publications: Publication[];
+}
+
+const MethodPage: React.FC<MethodPageProps> = ({ publications }) => {
   const [copiedCitation, setCopiedCitation] = useState(false);
   const [attentionMode, setAttentionMode] = useState('patient');
   const [windowSize, setWindowSize] = useState(2);
   const [selectedPair, setSelectedPair] = useState<SelectedAttentionPair>(null);
   const [activeSection, setActiveSection] = useState(methodSectionLinks[0].target);
   const [activeSkipIndex, setActiveSkipIndex] = useState<number | null>(null);
+  const methodPublications = publications.filter((publication) =>
+    publication.title.toLowerCase().includes('modular efficient transformer for health outcome discovery')
+  );
   const attentionStats = getAttentionPairStats(attentionMode, windowSize);
   const activeSkip = activeSkipIndex === null ? null : skipRows[activeSkipIndex];
   const selectedQuery = selectedPair
@@ -816,10 +815,10 @@ const MethodPage: React.FC = () => {
               <h2 className="font-serif text-3xl md:text-4xl">METHOD Paper</h2>
             </div>
             <div className="space-y-4">
-              {publications.map((item) => (
+              {methodPublications.map((item) => (
                 <a
-                  key={item.title}
-                  href={item.href}
+                  key={item.id}
+                  href={item.link}
                   target="_blank"
                   rel="noreferrer"
                   className="group block rounded-2xl border border-lab-gray bg-white p-5 transition-colors hover:border-lab-accent dark:border-white/10 dark:bg-void-gray/50 dark:hover:border-neon-cyan"
@@ -827,13 +826,18 @@ const MethodPage: React.FC = () => {
                   <div className="flex items-start justify-between gap-6">
                     <div>
                       <h3 className="font-serif text-xl leading-snug group-hover:text-lab-accent dark:group-hover:text-neon-cyan">{item.title}</h3>
-                      <p className="mt-3 text-sm text-lab-text/65 dark:text-void-text/65">{item.authors}</p>
-                      <p className="mt-1 font-mono text-xs uppercase tracking-[0.14em] text-lab-accent/60 dark:text-neon-cyan/70">{item.venue}</p>
+                      <p className="mt-3 text-sm text-lab-text/65 dark:text-void-text/65">{item.authors.join(', ')}</p>
+                      <p className="mt-1 font-mono text-xs uppercase tracking-[0.14em] text-lab-accent/60 dark:text-neon-cyan/70">
+                        {[item.journal, item.year].filter(Boolean).join(' · ')}
+                      </p>
                     </div>
                     <ArrowUpRight className="mt-1 h-5 w-5 shrink-0 opacity-45 transition-opacity group-hover:opacity-100" />
                   </div>
                 </a>
               ))}
+              {methodPublications.length === 0 && (
+                <p className="text-sm text-lab-text/55 dark:text-void-text/55">Loading publication data…</p>
+              )}
             </div>
           </div>
 

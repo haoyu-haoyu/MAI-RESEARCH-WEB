@@ -1,21 +1,19 @@
-name: Deploy to GitHub Pages
+name: Sync Google Scholar Publications
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '17 4 * * 1'
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: scholar-sync
+  cancel-in-progress: false
 
 jobs:
-  build:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -40,36 +38,29 @@ jobs:
             echo "enabled=true" >> "$GITHUB_OUTPUT"
           else
             echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "Scholar sync skipped: configure SERPAPI_KEY and SCHOLAR_USER_ID repository secrets."
           fi
 
-      - name: Sync publications from Google Scholar
+      - name: Generate publications from Google Scholar
         if: steps.scholar.outputs.enabled == 'true'
         env:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
           SCHOLAR_USER_ID: ${{ secrets.SCHOLAR_USER_ID }}
         run: npm run sync:scholar
 
-      - name: Validate content data
+      - name: Validate generated data
+        if: steps.scholar.outputs.enabled == 'true'
         run: npm run validate:data
 
-      - name: Build
-        run: npm run build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Commit updated publications
+        if: steps.scholar.outputs.enabled == 'true'
+        run: |
+          git add data/publications.json
+          if git diff --cached --quiet; then
+            echo "Google Scholar publications are already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: sync Google Scholar publications"
+          git push

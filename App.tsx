@@ -8,12 +8,15 @@ import PublicationList from './components/PublicationList';
 import Team from './components/Team';
 import MethodPage from './components/MethodPage';
 import ProjectPage from './components/ProjectPage';
-import { PROJECTS, PROJECT_PAGES, PUBLICATIONS, TEAM } from './constants';
+import { loadSiteContent } from './content';
+import { SiteContent } from './types';
 import { ArrowDown } from 'lucide-react';
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [hashRoute, setHashRoute] = useState(() => window.location.hash);
+  const [siteContent, setSiteContent] = useState<SiteContent | null>(null);
+  const [contentError, setContentError] = useState('');
 
   const scrollToTopInstantly = () => {
     const root = document.documentElement;
@@ -48,6 +51,27 @@ const App: React.FC = () => {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
+  useEffect(() => {
+    let isCancelled = false;
+
+    loadSiteContent()
+      .then(content => {
+        if (!isCancelled) {
+          setSiteContent(content);
+        }
+      })
+      .catch(error => {
+        console.error('Failed to load site content', error);
+        if (!isCancelled) {
+          setContentError('The research data could not be loaded. Please refresh the page.');
+        }
+      });
+
+    return () => {
+      isCancelled = true;
+    };
+  }, []);
+
   useLayoutEffect(() => {
     if (hashRoute.startsWith('#/')) {
       scrollToTopInstantly();
@@ -66,7 +90,11 @@ const App: React.FC = () => {
   const projectSlug = hashRoute.startsWith('#/projects/')
     ? hashRoute.replace('#/projects/', '').split(/[?#]/)[0]
     : '';
-  const activeProject = projectSlug ? PROJECT_PAGES[projectSlug] : undefined;
+  const activeProject = projectSlug ? siteContent?.projectPages[projectSlug] : undefined;
+  const isProjectRouteLoading = Boolean(projectSlug && !siteContent && !contentError);
+  const projects = siteContent?.projects || [];
+  const publications = siteContent?.publications || [];
+  const team = siteContent?.team || [];
 
   useEffect(() => {
     const defaultTitle = 'MAI Research | Multimodal AI Laboratory';
@@ -94,7 +122,14 @@ const App: React.FC = () => {
       <CustomCursor darkMode={darkMode} />
       <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
       {isMethodPage ? (
-        <MethodPage />
+        <MethodPage publications={publications} />
+      ) : isProjectRouteLoading ? (
+        <main
+          aria-busy="true"
+          className="flex min-h-screen items-center justify-center bg-lab-white text-sm font-mono uppercase tracking-[0.18em] text-lab-text/55 dark:bg-void-black dark:text-void-text/55"
+        >
+          Loading project…
+        </main>
       ) : activeProject ? (
         <ProjectPage project={activeProject} />
       ) : (
@@ -131,6 +166,11 @@ const App: React.FC = () => {
       </style>
 
       <main>
+        {contentError && (
+          <div role="alert" className="container mx-auto px-6 pt-28 text-center text-sm text-red-700 dark:text-red-300">
+            {contentError}
+          </div>
+        )}
       {/* Hero Section */}
       <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
         <h1 className="sr-only">MAI Research</h1>
@@ -160,7 +200,7 @@ const App: React.FC = () => {
                 Developing next-generation algorithms for computer vision, foundation models, and trustworthy AI in healthcare.
             </p>
         </div>
-        <BentoGrid projects={PROJECTS} />
+        <BentoGrid projects={projects} />
       </section>
 
       {/* Publications Section */}
@@ -170,7 +210,7 @@ const App: React.FC = () => {
                 <span className="text-sm font-mono text-lab-accent dark:text-neon-cyan mb-2 block">02 / KNOWLEDGE</span>
                 <h2 className="text-4xl md:text-6xl font-serif text-lab-text dark:text-void-text">Publications</h2>
             </div>
-            <PublicationList publications={PUBLICATIONS} />
+            <PublicationList publications={publications} />
          </div>
       </section>
 
@@ -181,7 +221,7 @@ const App: React.FC = () => {
              <h2 className="text-4xl md:text-6xl font-serif text-lab-text dark:text-void-text mb-8">The Team</h2>
              <div className="h-px w-full bg-lab-gray dark:bg-void-gray"></div>
         </div>
-        <Team members={TEAM} />
+        <Team members={team} />
       </section>
       </main>
 

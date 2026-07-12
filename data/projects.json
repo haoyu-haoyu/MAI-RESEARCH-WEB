@@ -1,0 +1,303 @@
+[
+  {
+    "id": "method",
+    "title": "METHOD",
+    "category": "Foundation Models",
+    "description": "METHOD is a novel LLM based on the transformer architecture specifically designed for healthcare applications. It addresses unique challenges in modeling patient trajectories, featuring a patient-aware attention mechanism and a U-Net inspired architecture with dynamic skip connections.",
+    "text": "METHOD is a novel LLM based on the transformer architecture specifically designed for healthcare applications, addressing unique challenges in modeling patient trajectories from electronic health records. Unlike generic transformer models, METHOD introduces several innovations tailored to clinical data: a patient-aware attention mechanism that ensures strict isolation of patient information while enabling efficient batch processing; an adaptive sliding window attention scheme that captures multi-scale temporal dependencies; and a U-Net inspired architecture with dynamic skip connections for effective long sequence processing. The model overcomes current limitations in handling variable-specific information loss, distribution preservation, and temporal resolution challenges. Experimental evaluation on MIMIC-IV databases demonstrates METHOD's robust performance across varying sequence lengths, particularly for high-severity cases, with improved clinical semantic alignment compared to baseline models. METHOD represents a significant advancement in healthcare AI, offering enhanced computational efficiency while preserving clinically relevant temporal structures—a crucial step toward transformer architectures optimized for healthcare applications.",
+    "image": "images/method.png",
+    "image_alt": "Method Architecture",
+    "link": "method.html",
+    "route": "#/method",
+    "link_label": "Open Project",
+    "title_link": "method.html",
+    "size": "large",
+    "year": "2024"
+  },
+  {
+    "id": "pypots",
+    "title": "PyPOTS",
+    "category": "Open Source Toolkit",
+    "description": "We are part of the PyPOTS team. A comprehensive Python toolkit designed for data mining on complex time series with missing values, offering a collection of state-of-the-art neural network models for imputation, classification, and forecasting.",
+    "text": "We are part of the PyPOTS team. PyPOTS is a Python toolkit designed for machine learning and data mining on complex time series data with missing values. It offers a collection of state-of-the-art neural network models capable of performing various analytical tasks such as imputation, classification, clustering, forecasting, anomaly detection, and data cleaning on incomplete, irregularly sampled multivariate time series. The toolkit simplifies the process of working with partially observed time series (pOTS), i.e. time series with missing values, by providing unified APIs, detailed documentation, and practical examples. Our CSAI model is part of the PyPOTS package.",
+    "image": "images/pypots.png",
+    "image_alt": "PyPOTS Architecture",
+    "link": "https://github.com/WenjieDu/PyPOTS/",
+    "route": "#/projects/pypots",
+    "link_label": "View on GitHub",
+    "title_link": null,
+    "size": "medium",
+    "year": "2024",
+    "page": {
+      "id": "pypots",
+      "title": "PyPOTS",
+      "category": "Open Source Toolkit",
+      "year": "2024",
+      "image": "images/pypots.png",
+      "imageAlt": "PyPOTS open-source toolkit workflow diagram",
+      "headline": "A Python ecosystem for partially observed time series.",
+      "summary": "PyPOTS brings imputation, classification, forecasting, clustering, and anomaly detection workflows into a unified toolkit for partially observed time series.",
+      "focus": "Partially observed time series",
+      "model": "Toolkit",
+      "overview": [
+        {
+          "label": "Problem",
+          "title": "Missingness is a default condition in real data.",
+          "text": "Clinical and operational time series often arrive with irregular sampling, gaps, and task-specific preprocessing needs that make reproducible experiments difficult."
+        },
+        {
+          "label": "Approach",
+          "title": "Unify tasks behind practical Python APIs.",
+          "text": "PyPOTS provides a consistent research-to-tooling layer across imputation, classification, forecasting, clustering, and anomaly detection for partially observed time series."
+        },
+        {
+          "label": "Outcome",
+          "title": "Lower friction for benchmarking and reuse.",
+          "text": "The toolkit helps researchers compare models, package experiments, and connect new methods with an ecosystem that is easier to install, document, and extend."
+        }
+      ],
+      "ideas": [
+        {
+          "label": "01",
+          "title": "Partially observed time series first",
+          "text": "The project is designed around POTS data rather than treating missing values as an afterthought."
+        },
+        {
+          "label": "02",
+          "title": "Shared task interface",
+          "text": "A unified toolkit structure keeps data preparation, model use, and evaluation closer across common time-series tasks."
+        },
+        {
+          "label": "03",
+          "title": "Research-ready documentation",
+          "text": "Docs, tutorials, and examples help methods move from a paper implementation into repeatable workflows."
+        },
+        {
+          "label": "04",
+          "title": "Open-source maintenance",
+          "text": "The project is maintained as a community-facing package, so new algorithms and benchmarks can be added without starting from scratch."
+        }
+      ],
+      "metrics": [
+        {
+          "value": "5",
+          "label": "Time-series tasks"
+        },
+        {
+          "value": "OSS",
+          "label": "Open-source package"
+        },
+        {
+          "value": "POTS",
+          "label": "Native data focus"
+        }
+      ],
+      "resources": [
+        {
+          "label": "Website",
+          "href": "https://pypots.com/",
+          "description": "Project homepage and overview.",
+          "primary": true
+        },
+        {
+          "label": "GitHub",
+          "href": "https://github.com/WenjieDu/PyPOTS/",
+          "description": "Source code and package development."
+        },
+        {
+          "label": "Documentation",
+          "href": "https://docs.pypots.com/",
+          "description": "Installation, tutorials, and API reference."
+        }
+      ],
+      "note": "This page describes MAI-related use of the PyPOTS ecosystem and links out to the upstream open-source project for full documentation."
+    }
+  },
+  {
+    "id": "csai",
+    "title": "CSAI",
+    "category": "Imputation",
+    "description": "Conditional Self-Attention Imputation (CSAI) is an innovative Neural Network architecture for handling complex missing data patterns in multivariate healthcare time series, incorporating a domain-informed temporal decay mechanism.",
+    "text": "The Conditional Self-Attention Imputation (CSAI) is an innovative Neural Network architecture for handling complex missing data patterns in multivariate healthcare time series. CSAI implements an attention-based hidden state initialisation technique capturing both long- and short-range temporal dependencies; a domain-informed temporal decay mechanism adjusting to clinical data recording patterns; and a non-uniform masking strategy modeling non-random missingness by calibrating weights based on temporal and cross-sectional data characteristics. CSAI is available as a stand-alone algorithm on GitHub but is also part of the PyPOTS Python library, which can be installed via pip.",
+    "image": "images/csai.png",
+    "image_alt": "CSAI",
+    "link": "https://github.com/LinglongQian/CSAI",
+    "route": "#/projects/csai",
+    "link_label": "View on GitHub",
+    "title_link": null,
+    "size": "small",
+    "year": "2025",
+    "page": {
+      "id": "csai",
+      "title": "CSAI",
+      "category": "Imputation",
+      "year": "2025",
+      "image": "images/csai.png",
+      "imageAlt": "CSAI architecture diagram",
+      "headline": "Conditional self-attention for healthcare time-series imputation.",
+      "summary": "CSAI targets complex missingness in multivariate healthcare time series with conditional self-attention and domain-informed temporal decay.",
+      "focus": "Healthcare imputation",
+      "model": "Self-attention",
+      "overview": [
+        {
+          "label": "Problem",
+          "title": "Healthcare missingness is structured, not random noise.",
+          "text": "Clinical measurements are recorded at different frequencies and often reflect care decisions, making simple interpolation or generic masking insufficient."
+        },
+        {
+          "label": "Approach",
+          "title": "Condition attention on clinical time gaps.",
+          "text": "CSAI combines self-attention with temporal decay so the model can account for both observed signals and the time elapsed between measurements."
+        },
+        {
+          "label": "Outcome",
+          "title": "A focused model for imputation benchmarks.",
+          "text": "The work is presented as a healthcare time-series imputation method and is linked to the project code, PDF, and publication record."
+        }
+      ],
+      "ideas": [
+        {
+          "label": "01",
+          "title": "Conditional attention",
+          "text": "Attention weights are shaped by the clinical sequence context rather than relying on sequence position alone."
+        },
+        {
+          "label": "02",
+          "title": "Temporal decay",
+          "text": "Time gaps are treated as meaningful information for imputation instead of being hidden by preprocessing."
+        },
+        {
+          "label": "03",
+          "title": "Healthcare time series",
+          "text": "The model is framed around multivariate clinical data where measurements are sparse and irregular."
+        },
+        {
+          "label": "04",
+          "title": "Reproducible implementation",
+          "text": "The page routes readers to the public code and PDF so the method can be inspected beyond the summary view."
+        }
+      ],
+      "metrics": [
+        {
+          "value": "JBHI",
+          "label": "Publication venue"
+        },
+        {
+          "value": "2025",
+          "label": "Publication year"
+        },
+        {
+          "value": "PDF",
+          "label": "Paper available"
+        }
+      ],
+      "resources": [
+        {
+          "label": "GitHub",
+          "href": "https://github.com/LinglongQian/CSAI",
+          "description": "Project repository and source code.",
+          "primary": true
+        },
+        {
+          "label": "Paper",
+          "href": "https://ieeexplore.ieee.org/abstract/document/11314658",
+          "description": "IEEE JBHI publication page."
+        },
+        {
+          "label": "PDF",
+          "href": "https://mai-research.github.io/docs/csai.pdf",
+          "description": "Hosted PDF copy from the MAI site."
+        }
+      ]
+    }
+  },
+  {
+    "id": "deari",
+    "title": "DEARI",
+    "category": "Deep Learning",
+    "description": "An innovative deep learning model designed to address complex missing data challenges in heterogeneous multivariate time series. It introduces a scalable deep attention recurrent neural network and a Bayesian marginalization strategy.",
+    "text": "DEARI is an innovative deep learning model designed to address complex missing data challenges in heterogeneous multivariate time series. Building upon BRITS architecture, DEARI introduces three key innovations: a scalable deep attention recurrent neural network, a self-supervised metric learning approach, and a Bayesian marginalization strategy for uncertainty quantification.",
+    "image": "images/deari.png",
+    "image_alt": "DEARI",
+    "link": "https://github.com/LinglongQian/CSAI",
+    "route": "#/projects/deari",
+    "link_label": "View on GitHub",
+    "title_link": null,
+    "size": "small",
+    "year": "2024",
+    "page": {
+      "id": "deari",
+      "title": "DEARI",
+      "category": "Deep Learning",
+      "year": "2024",
+      "image": "images/deari.png",
+      "imageAlt": "DEARI model architecture diagram",
+      "headline": "Deep attention recurrent imputation for heterogeneous time series.",
+      "summary": "DEARI studies imputation for heterogeneous multivariate time series using deep attention recurrent modelling and Bayesian marginalization.",
+      "focus": "Multivariate time series",
+      "model": "Deep recurrent attention",
+      "overview": [
+        {
+          "label": "Problem",
+          "title": "Incomplete time series remain hard to model robustly.",
+          "text": "Different variables can have different missingness patterns, temporal structure, and uncertainty, especially when data sources are heterogeneous."
+        },
+        {
+          "label": "Approach",
+          "title": "Combine recurrent dynamics with attention.",
+          "text": "DEARI uses a deep attention recurrent formulation to represent temporal dependencies while accounting for uncertainty in missing observations."
+        },
+        {
+          "label": "Outcome",
+          "title": "A research model for imputation under uncertainty.",
+          "text": "The page keeps the focus on the published method and links readers to the arXiv paper for full experimental and mathematical detail."
+        }
+      ],
+      "ideas": [
+        {
+          "label": "01",
+          "title": "Deep recurrent backbone",
+          "text": "Sequential dynamics are modelled with recurrent structure rather than a purely static imputation rule."
+        },
+        {
+          "label": "02",
+          "title": "Attention over temporal evidence",
+          "text": "Attention helps the model weigh relevant observations when imputing missing values."
+        },
+        {
+          "label": "03",
+          "title": "Bayesian marginalization",
+          "text": "The method explicitly reasons about uncertainty instead of collapsing all missing values into one deterministic proxy."
+        },
+        {
+          "label": "04",
+          "title": "Heterogeneous settings",
+          "text": "The model is motivated by multivariate sequences where variables and observation patterns differ across time."
+        }
+      ],
+      "metrics": [
+        {
+          "value": "arXiv",
+          "label": "Paper source"
+        },
+        {
+          "value": "2024",
+          "label": "Research year"
+        },
+        {
+          "value": "RNN",
+          "label": "Model family"
+        }
+      ],
+      "resources": [
+        {
+          "label": "arXiv",
+          "href": "https://arxiv.org/abs/2401.02258",
+          "description": "Paper abstract and PDF.",
+          "primary": true
+        }
+      ],
+      "note": "No separate public repository is linked here because the current project data does not include a verified DEARI code URL."
+    }
+  }
+]
