@@ -32,6 +32,7 @@ export interface ProjectPageData {
   title: string;
   category: string;
   year: string;
+  yearLabel?: string;
   image: string;
   imageAlt: string;
   headline: string;
@@ -81,6 +82,7 @@ export interface NavItem {
 export interface SiteContent {
   projects: Project[];
   projectPages: Record<string, ProjectPageData>;
+  projectRedirects: Record<string, string>;
   publications: Publication[];
   team: TeamMember[];
 }

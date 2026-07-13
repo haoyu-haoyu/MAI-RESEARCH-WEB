@@ -1,7 +1,104 @@
 [
   {
+    "id": "timely-agent",
+    "title": "TIMELY-Agent",
+    "category": "Active Research",
+    "description": "TIMELY-Agent is an agentic framework for building clinically grounded, auditable multimodal reasoning benchmarks from longitudinal electronic health records.",
+    "text": "TIMELY-Agent is an agentic framework for building clinically grounded, auditable multimodal reasoning benchmarks from longitudinal electronic health records. It turns irregular patient timelines into compact, provenance-preserving reasoning episodes and supports evaluation of temporal grounding, cross-modal consistency, and evidence use. The framework separates public knowledge synthesis from governed local work with patient data, helping researchers inspect how benchmark tasks are specified, assembled, and audited.",
+    "image": "images/timely-agent-public.png",
+    "image_class": "project-image--architecture",
+    "image_alt": "TIMELY-Agent architecture separating knowledge-facing agents from governed patient-facing local computation",
+    "link": "timely-agent.html",
+    "route": "#/projects/timely-agent",
+    "link_label": "Open Project",
+    "title_link": "timely-agent.html",
+    "size": "large",
+    "year": "Active",
+    "page": {
+      "id": "timely-agent",
+      "title": "TIMELY-Agent",
+      "category": "Active Research",
+      "year": "Active",
+      "yearLabel": "Status",
+      "image": "images/timely-agent-public.png",
+      "imageAlt": "TIMELY-Agent architecture separating knowledge-facing agents from governed patient-facing local computation",
+      "headline": "An agentic framework for clinically grounded, auditable multimodal reasoning benchmarks.",
+      "summary": "TIMELY-Agent reconstructs clinically meaningful patient state from long, irregular and multimodal electronic health records before evaluation begins.",
+      "focus": "Multimodal clinical reasoning",
+      "model": "Agentic framework",
+      "overview": [
+        {
+          "label": "Problem",
+          "title": "Static evaluation can hide when evidence was used.",
+          "text": "Electronic health records are long, irregular and multimodal. Static question answering and endpoint prediction can hide whether a model used the right evidence at the right time."
+        },
+        {
+          "label": "Episodes",
+          "title": "Preserve the patient timeline and its provenance.",
+          "text": "A reasoning episode is a compact, provenance-preserving view of patient history centred on a clinically meaningful question, combining temporally bounded structured data with relevant clinical text."
+        },
+        {
+          "label": "Privacy",
+          "title": "Keep patient-facing computation governed and local.",
+          "text": "Public clinical sources can support benchmark specification, while patient-level data remain within governed local infrastructure. Reviewed specifications may cross into the local environment; real patient data do not cross out."
+        }
+      ],
+      "ideas": [
+        {
+          "label": "01",
+          "title": "Clinical knowledge",
+          "text": "Define meaningful conditions, anchor events and temporal patterns from reviewed clinical sources."
+        },
+        {
+          "label": "02",
+          "title": "Governed retrieval",
+          "text": "Retrieve relevant evidence through controlled interfaces inside secure local environments."
+        },
+        {
+          "label": "03",
+          "title": "Reasoning episodes",
+          "text": "Align structured trajectories with clinical note fragments around meaningful questions."
+        },
+        {
+          "label": "04",
+          "title": "Tasks and audit",
+          "text": "Evaluate temporal grounding, cross-modal consistency and the use of supporting evidence."
+        },
+        {
+          "label": "05",
+          "title": "Research foundations",
+          "text": "Pilot implementations explore multimodal episode construction and behavioural auditing on critical-care data while the wider research programme continues to develop."
+        }
+      ],
+      "metrics": [
+        {
+          "value": "4",
+          "label": "Framework stages"
+        },
+        {
+          "value": "EHR",
+          "label": "Longitudinal evidence"
+        },
+        {
+          "value": "Local",
+          "label": "Patient-data boundary"
+        }
+      ],
+      "resources": [
+        {
+          "label": "Contact",
+          "href": "mailto:zina.ibrahim@kcl.ac.uk",
+          "description": "Email the MAI Research Group about trustworthy clinical agents, temporal reasoning, or multimodal benchmark design.",
+          "primary": true
+        }
+      ],
+      "note": "Publications and project resources will be linked here when available."
+    }
+  },
+  {
     "id": "method",
     "title": "METHOD",
+    "hidden": true,
     "category": "Foundation Models",
     "description": "METHOD is a novel LLM based on the transformer architecture specifically designed for healthcare applications. It addresses unique challenges in modeling patient trajectories, featuring a patient-aware attention mechanism and a U-Net inspired architecture with dynamic skip connections.",
     "text": "METHOD is a novel LLM based on the transformer architecture specifically designed for healthcare applications, addressing unique challenges in modeling patient trajectories from electronic health records. Unlike generic transformer models, METHOD introduces several innovations tailored to clinical data: a patient-aware attention mechanism that ensures strict isolation of patient information while enabling efficient batch processing; an adaptive sliding window attention scheme that captures multi-scale temporal dependencies; and a U-Net inspired architecture with dynamic skip connections for effective long sequence processing. The model overcomes current limitations in handling variable-specific information loss, distribution preservation, and temporal resolution challenges. Experimental evaluation on MIMIC-IV databases demonstrates METHOD's robust performance across varying sequence lengths, particularly for high-severity cases, with improved clinical semantic alignment compared to baseline models. METHOD represents a significant advancement in healthcare AI, offering enhanced computational efficiency while preserving clinically relevant temporal structures—a crucial step toward transformer architectures optimized for healthcare applications.",
@@ -9,6 +106,7 @@
     "image_alt": "Method Architecture",
     "link": "method.html",
     "route": "#/method",
+    "redirect": "#/projects/timely-agent",
     "link_label": "Open Project",
     "title_link": "method.html",
     "size": "large",

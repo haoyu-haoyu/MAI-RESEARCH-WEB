@@ -1,9 +1,11 @@
 import { Project, ProjectPageData, Publication, SiteContent, TeamMember } from './types';
 
 interface ProjectRecord extends Project {
+  hidden?: boolean;
   image_alt?: string;
   link_label?: string;
   page?: ProjectPageData;
+  redirect?: string;
   route?: string;
   text?: string;
   title_link?: string | null;
@@ -77,21 +79,24 @@ const fetchArray = async <T>(url: URL, label: string): Promise<T[]> => {
 const normalizeProjects = (records: ProjectRecord[]) => {
   const projects: Project[] = [];
   const projectPages: Record<string, ProjectPageData> = {};
+  const projectRedirects: Record<string, string> = {};
 
   records.forEach((record, index) => {
     const id = record.id || slugify(record.title) || `project-${index + 1}`;
     const image = withBasePath(record.image);
 
-    projects.push({
-      id,
-      title: record.title,
-      category: record.category || 'Research Project',
-      description: record.text || record.description || '',
-      image,
-      link: record.route || record.link || record.title_link || '#research',
-      size: ['small', 'medium', 'large'].includes(record.size) ? record.size : 'small',
-      year: String(record.year || '')
-    });
+    if (!record.hidden) {
+      projects.push({
+        id,
+        title: record.title,
+        category: record.category || 'Research Project',
+        description: record.text || record.description || '',
+        image,
+        link: record.route || record.link || record.title_link || '#research',
+        size: ['small', 'medium', 'large'].includes(record.size) ? record.size : 'small',
+        year: String(record.year || '')
+      });
+    }
 
     if (record.page) {
       projectPages[id] = {
@@ -100,9 +105,13 @@ const normalizeProjects = (records: ProjectRecord[]) => {
         image: withBasePath(record.page.image)
       };
     }
+
+    if (record.route && record.redirect) {
+      projectRedirects[record.route] = record.redirect;
+    }
   });
 
-  return { projects, projectPages };
+  return { projects, projectPages, projectRedirects };
 };
 
 const normalizeTeam = (records: TeamRecord[]): TeamMember[] =>
@@ -153,11 +162,12 @@ export const loadSiteContent = async (): Promise<SiteContent> => {
     fetchArray<PublicationRecord>(contentUrls.publications, 'publications'),
     fetchArray<TeamRecord>(contentUrls.team, 'team')
   ]);
-  const { projects, projectPages } = normalizeProjects(projectRecords);
+  const { projects, projectPages, projectRedirects } = normalizeProjects(projectRecords);
 
   return {
     projects,
     projectPages,
+    projectRedirects,
     publications: normalizePublications(publicationRecords),
     team: normalizeTeam(teamRecords)
   };

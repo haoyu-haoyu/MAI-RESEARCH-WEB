@@ -90,7 +90,7 @@ const ProjectPage: React.FC<ProjectPageProps> = ({ project }) => {
                 <dd className="mt-2 font-mono text-lab-text/72 dark:text-void-text/72">{project.model}</dd>
               </div>
               <div>
-                <dt className="font-mono text-lab-text/38 dark:text-void-text/38">Year</dt>
+                <dt className="font-mono text-lab-text/38 dark:text-void-text/38">{project.yearLabel || 'Year'}</dt>
                 <dd className="mt-2 font-mono text-lab-text/72 dark:text-void-text/72">{project.year}</dd>
               </div>
             </dl>

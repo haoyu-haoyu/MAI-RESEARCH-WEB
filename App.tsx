@@ -91,10 +91,17 @@ const App: React.FC = () => {
     ? hashRoute.replace('#/projects/', '').split(/[?#]/)[0]
     : '';
   const activeProject = projectSlug ? siteContent?.projectPages[projectSlug] : undefined;
+  const redirectTarget = siteContent?.projectRedirects[hashRoute];
   const isProjectRouteLoading = Boolean(projectSlug && !siteContent && !contentError);
   const projects = siteContent?.projects || [];
   const publications = siteContent?.publications || [];
   const team = siteContent?.team || [];
+
+  useEffect(() => {
+    if (redirectTarget && redirectTarget !== hashRoute) {
+      window.location.replace(redirectTarget);
+    }
+  }, [hashRoute, redirectTarget]);
 
   useEffect(() => {
     const defaultTitle = 'MAI Research | Multimodal AI Laboratory';
@@ -121,7 +128,14 @@ const App: React.FC = () => {
     <div className="relative min-h-screen w-full overflow-hidden">
       <CustomCursor darkMode={darkMode} />
       <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
-      {isMethodPage ? (
+      {redirectTarget ? (
+        <main
+          aria-busy="true"
+          className="flex min-h-screen items-center justify-center bg-lab-white text-sm font-mono uppercase tracking-[0.18em] text-lab-text/55 dark:bg-void-black dark:text-void-text/55"
+        >
+          Redirecting…
+        </main>
+      ) : isMethodPage ? (
         <MethodPage publications={publications} />
       ) : isProjectRouteLoading ? (
         <main

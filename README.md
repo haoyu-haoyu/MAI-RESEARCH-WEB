@@ -40,7 +40,7 @@ No HTML or CSS changes are required.
 
 ## Updating projects
 
-Edit `data/projects.json`. Project text, images, links, card presentation, internal routes, and optional detail-page content are stored there. New project images belong in `public/images/`.
+Edit `data/projects.json`. Project text, images, links, card presentation, internal routes and redirects, visibility (`hidden`), and optional detail-page content are stored there. New project images belong in `public/images/`.
 
 Run `npm run validate:data` after editing. No HTML or CSS changes are required for routine project updates.
 
